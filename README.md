@@ -8,7 +8,7 @@ Instructor e-mail: **pamela.wong@berkeley.edu**
 
 ## Quick Links
 
-- [Syllabus]()
+- [Syllabus](https://github.com/whypam/x455-HTML5-CSS3/blob/masterx455-HTML5-CSS3-Syllabus.pdf)
 - [Course Details](https://extension.berkeley.edu/search/publicCourseSearchDetails.do?method=load&courseId=11188390#courseSectionDetails_58168140)
 - [Course Work](#course-work)
 - [Atom Packages/Themes](#atom-packagesthemes)
