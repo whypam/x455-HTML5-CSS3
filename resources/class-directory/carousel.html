@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carousel</title>
+  <link href="./assets/stylesheets/slick.css" rel="stylesheet" />
+  <link href="./assets/stylesheets/slick-theme.css" rel="stylesheet" />
+
+  <style>
+    body {
+      background: cornflowerblue;
+    }
+    .your-class {
+      width: 800px;
+      margin: auto;
+    }
+
+    .your-class img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="your-class">
+    <div>
+      <img src="./assets/images/lightbox/kitten-1-thumbnail.jpg" />
+    </div>
+    <div>
+      <img src="./assets/images/lightbox/puppy-1-thumbnail.jpg" />
+    </div>
+    <div>
+      <img src="./assets/images/lightbox/puppy-2-thumbnail.jpg" />
+    </div>
+    <div>
+      <img src="./assets/images/lightbox/puppy-3-thumbnail.jpg" />
+    </div>
+    <div>
+      <img src="./assets/images/lightbox/other-1-thumbnail.jpg" />
+    </div>
+    <div>
+      <img src="./assets/images/lightbox/other-2-thumbnail.jpg" />
+    </div>
+  </div>
+
+
+<script src="./assets/javascripts/jquery.min.js"></script>
+<script src="./assets/javascripts/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $('.your-class').slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+      dots: true,
+      // centerMode: true,
+      slidesToShow: 2
+    });
+  });
+</script>
+</body>
+</html>

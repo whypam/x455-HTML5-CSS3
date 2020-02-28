@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML5 Video</title>
+  <style>
+    video {
+      min-width: 100%;
+      min-height: 100%;
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      z-index: 0;
+    }
+
+    .content {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <h1>Template</h1>
+  </div>
+  <video autoplay loop>
+    <source src="./assets/videos/dog-and-fly.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+  </video>
+</body>
+</html>

@@ -1,0 +1,57 @@
+html {
+  background: url(../images/super-awesome-turtle.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(244,244,244, 0.75);
+}
+
+section {
+  /* shorthand for padding top and bottom */
+  /* https://www.w3schools.com/css/css_padding.asp */
+  padding: 80px 0;
+  /* padding-top: 80px;
+  padding-bottom: 80px; */
+  position: relative;
+  border: 1px solid #000;
+
+}
+
+.absolute {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  background: green;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.red-gradient {
+  background: rgb(36,0,0);
+  background: linear-gradient(90deg, rgba(36,0,0,0.8561799719887955) 0%, rgba(121,9,9,1) 49%, rgba(255,0,0,1) 100%);
+}
+
+.image-sizing {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+/* .image-sizing img {
+  width: 200px;
+  height: 200px;
+} */
+
+/* responsive scaling image */
+/* .image-responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
