@@ -69,6 +69,17 @@ You will take this band or musisc groups and create a site containing the follow
 - Wk 9: Web Hosting & FTP
 - Wk 10: Final Presentation
 
+### Course Work
+
+- 5 Assignments
+  - Wireframes 1
+  - Wireframes 2
+  - Design Mockup 1
+  - Design Mockup 2
+  - Prototype
+  
+- 1 Presentation (final project)
+
 ### Atom Packages/Themes
 
 Adding **Packages and Themes** to Atom can be done with the following:
