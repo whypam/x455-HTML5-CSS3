@@ -1,4 +1,6 @@
-# UC Berkeley Extension - Art & Design - Web Design With HTML5 and CSS3 DESIGN X455
+# UC Berkeley Extension
+# Art & Design
+# Web Design With HTML5 and CSS3 DESIGN X455
 
 Instructor e-mail: **pamela.wong@berkeley.edu**
 
