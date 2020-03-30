@@ -5,7 +5,6 @@
 Instructor e-mail: **pamela.wong@berkeley.edu**
 
 [Demo Site](https://whypam.github.io/x455-project-demo/index.html)
-(Demo Site will be available by March 6, 2020)
 
 ## Quick Links
 
