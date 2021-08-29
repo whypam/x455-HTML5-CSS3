@@ -4,7 +4,7 @@
 
 Instructor e-mail: **pamela.wong@berkeley.edu**
 
-[Demo Site](https://whypam.github.io/x455-Proj-Demo-Fall-21/index.html)
+[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Fall-21/index.html)
 
 ## Quick Links
 
