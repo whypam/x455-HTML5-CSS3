@@ -2,8 +2,6 @@
 # Art & Design
 # Web Design With HTML5 and CSS3 DESIGN X455
 
-Instructor e-mail: **pamela.wong@berkeley.edu**
-
 [Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Fall-21/index.html)
 
 ## Quick Links
