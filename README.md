@@ -2,7 +2,7 @@
 # Art & Design
 # Web Design With HTML5 and CSS3 DESIGN X455
 
-[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo/index.html)
+[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Spring-2022/index.html)
 
 ## Quick Links
 
