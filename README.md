@@ -2,7 +2,7 @@
 # Art & Design
 # Web Design With HTML5 and CSS3 DESIGN X455
 
-[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Fall-21/index.html)
+[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo/index.html)
 
 ## Quick Links
 
@@ -39,13 +39,14 @@ In this course, you will develop a capstone project that is a website with six p
 
 ### Course Work
 
-- 6 Assignments
+- 8 Assignments
   - Development Environment Setup
   - Wireframes 1
   - Wireframes 2
   - Design Mockup 1
   - Design Mockup 2
   - Prototype
+  - Coding Exercise (2x)
   
 - 1 Presentation (final project)
 
