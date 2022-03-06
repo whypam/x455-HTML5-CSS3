@@ -1,4 +1,4 @@
-# UC Berkeley Extension---- Testing onlye
+# UC Berkeley Extension
 # Art & Design
 # Web Design With HTML5 and CSS3 DESIGN X455
 
