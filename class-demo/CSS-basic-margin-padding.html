@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  <!-- The viewport is the user's visible area of a web page. -->
+  <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+  <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>CSS Basic Margin & Padding (Box Model)</title>
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model -->
+  <!-- Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */ -->
+  <!-- Reference: https://www.w3schools.com/css/css_boxmodel.asp -->
+  <!-- Reference: https://www.w3schools.com/css/css_margin.asp -->
+  <!-- Reference: https://www.w3schools.com/css/css_padding.asp -->
+
+  <!--
+    Content: your text, images, etc.
+    Padding: area around the content
+    Border: wraps around the padding
+    Margin: clears area around border
+  -->
+  <style>
+    /* Internal CSS */
+    body {
+      background-color: steelblue;
+    }
+
+    section {
+      width: 600px;
+      height: auto;
+      /* height will be adjusted dynamically, according to the size of its contents */
+      margin: auto;
+      /* margin will be adjusted dynamically, according to the size of parent container element/tag */
+      background-color: forestgreen;
+    }
+
+    .margin-demo-1 {
+      border: 1px solid red;
+      margin: 25px 50px 75px 100px;
+      /* top right bottom left */
+      background-color: honeydew;
+    }
+
+    .padding-demo-1 {
+      border: 4px dashed green;
+      margin: 25px 50px 75px 100px;
+      /* top right bottom left */
+      padding: 25px 50px 75px 100px;
+      /* top right bottom left */
+      background-color: honeydew;
+    }
+
+    .box-model-1 {
+      /* set how the total width and height of an element is calculated
+           border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+           If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, 
+           and the content box will shrink to absorb that extra width.
+           Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+      box-sizing: border-box;
+      width: 100%;
+      border: solid tomato 10px;
+      padding: 5px;
+      /* shortcut for all top right bottom left */
+      background-color: thistle;
+    }
+
+    .box-model-2 {
+      /* content-box gives you the default CSS box-sizing behavior. 
+           If you set an element's width to 100 pixels, then the element's content box will be 100 pixels wide, 
+           and the width of any border or padding will be added to the final rendered width, making the element wider than 100px. 
+        */
+      box-sizing: content-box;
+      width: 100%;
+      border: solid tomato 10px;
+      /* 20px will be added to the total width of the content area, making the content area wider */
+      padding: 5px;
+      background-color: thistle;
+    }
+
+    .box-model-3 {
+      /* since no border or padding here, so no change on the content area wide */
+      box-sizing: content-box;
+      width: 100%;
+      background-color: thistle;
+    }
+
+    .box-model-4 {
+      box-sizing: inherit;
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <h2>Marign, Padding and Box Model Demo</h2>
+    <hr>
+    <div class="margin-demo-1">
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+    </div>
+    <hr>
+    <div class="padding-demo-1">
+      This div element has a top margin of 25px, a right margin of 50px, a bottom margin of 75px, and a left margin of
+      100px.
+      Additionally, it has a top padding of 25px, a right padding of 50px, a bottom padding of 75px and a left padding
+      of 100px.
+    </div>
+    <hr>
+    <div class="box-model-1">
+      box-sizing: border-box with 10px border and 5px padding
+      <div class="box-model-4">
+        box-sizing: content-box with 10px border and 5px padding
+      </div>
+    </div>
+    <hr>
+    <div class="box-model-2">
+      box-sizing: content-box with 10px border and 5px padding
+    </div>
+    <hr>
+    <div class="box-model-3">
+      box-sizing: content-box with NO border and padding
+    </div>
+    <hr>
+  </section>
+</body>
+
+</html>

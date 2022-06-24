@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basic Text Internal</title>
+  <style>
+    /* Internal CSS */
+    .title-1 {
+      margin: 0px 0px 1em 0px;
+      color: #076d6f;
+      font-size: 1.7em;
+      /* 1em === 16px, 1.7em === 27.2px */
+      font-weight: bold;
+      font-family: cursive, fantasy;
+    }
+
+    .title-2 {
+      text-decoration: underline;
+      letter-spacing: 5px;
+      color: indigo;
+      font-size: 2.5em;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- CSS class can be used multiple times in different HTML selectors/elements -->
+  <!-- Ref: https://www.w3schools.com/css/css_selectors.asp -->
+  <h1 class="title-1">h1 selector using title-1 class</h1>
+  <h2 class="title-2">h2 selector using title-2 class</h2>
+  <h3 class="title-1">h3 selector using title-1 class</h3>
+  <h4 class="title-2">h4 selector using title-2 class</h4>
+
+  <p class="title-1">Morbi commodo, ipsum sed pharetra gravida, orci rhoncus neque,
+    id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum
+    dolor sit amet, consect etuer adipiscing elit. Orci magna rhoncus
+    neque, id pulvinar odio lorem non turpis.</p>
+</body>
+
+</html>
