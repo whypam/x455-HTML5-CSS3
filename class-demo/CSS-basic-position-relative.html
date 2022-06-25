@@ -46,15 +46,16 @@
     .child-relative {
       position: relative;
       height: 200px;
+      width: 600px;
     }
 
     .child-absolute {
       position: absolute;
       top: 30px;
       /* top takes precedent over bottom */
-      left: 200px;
+      left: 150px;
       /* left takes precedent over right */
-      right: 100px;
+      right: 50px;
       bottom: 10px;
       width: 400px;
       height: 110px;
@@ -67,7 +68,7 @@
   <div class="parent-box">
     <h1>CSS Relative / Absolution Position</h1>
     <div class="child-relative child-box background-darkturquoise">RELATIVE BOX
-      <!-- parent has darksalmon background color -->
+      <!-- parent has darkturquoise background color -->
       <!-- child has deeppink background color that cascaded the parent's color -->
       <!-- the child also cascaded the parent's box size and position -->
       <div class="child-absolute child-box background-deeppink">
@@ -95,8 +96,8 @@
       const element2 = document.querySelector(".child-absolute");
       const rect2 = element2.getBoundingClientRect();
 
-      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + rect1.left.toFixed() + "<hr>Top: " + rect1.top.toFixed() + "<hr>Width: " + rect1.width + "<hr>Height: " + rect1.height;
-      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + rect2.left.toFixed() + "<hr>Top: " + rect2.top.toFixed() + "<hr>Width: " + rect2.width + "<hr>Height: " + rect2.height;
+      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + rect1.left.toFixed() + "<hr>Right: " + rect1.right.toFixed() + "<hr>Top: " + rect1.top.toFixed() + "<hr>Width: " + rect1.width + "<hr>Height: " + rect1.height;
+      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + rect2.left.toFixed() + "<hr>Right: " + rect2.right.toFixed() + "<hr>Top: " + rect2.top.toFixed() + "<hr>Width: " + rect2.width + "<hr>Height: " + rect2.height;
     }
   </script>
 
