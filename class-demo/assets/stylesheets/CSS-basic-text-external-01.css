@@ -1,0 +1,50 @@
+.new-p {
+  text-align: left;  /* left , justify, right - similar to MS Word text alignment */
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: indigo;
+}
+
+.new-mark {
+  background-color: cornflowerblue;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+  color: darkgreen;
+  /*background-color: darkkhaki;*/
+}
+
+.small-header-word {
+  font-size: 30px;
+  vertical-align: super;
+  letter-spacing: 0px;
+}
+
+.headline {
+  background-color: rgb(0, 51, 102); /* red, green and blue */
+  text-align: center;
+  color: white;
+  font-family: monospace, monospace;
+  font-size: 130px;
+  letter-spacing: 5px;
+}
+
+.hr2 {
+  border: 0;
+  border-top: 3px solid red;
+}
+
+.quote-container {
+  width: 630px;
+  padding: 10px;
+}
+.quote {
+  font-family: cursive, fantasy;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.text-align-right {
+  text-align: right;
+}

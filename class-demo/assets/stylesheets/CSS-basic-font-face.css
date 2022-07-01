@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Font Family 1";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 2";
+  src: url("../fonts/BonheurRoyale-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 3";
+  src: url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 4";
+  src: url("../fonts/Gluten-VariableFont_wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Font Family 5";
+  src: url("../fonts/StickNoBills-VariableFont_wght.ttf") format("truetype");
+}
+
+header {
+  font-family: "Font Family 1", sans-serif;
+}
+
+section {
+  font-family: "Font Family 2", sans-serif;
+}
+
+p {
+  font-family: "Font Family 3", sans-serif;
+}
+
+summary {
+  font-family: "Font Family 4", sans-serif;
+}
+
+figcaption {
+  font-family: "Font Family 5", sans-serif;
+}
+
+.font-class-1 {
+  font-family: "Font Family 1", sans-serif;
+  font-size: 36px;
+  color: teal;
+}
+
+.font-class-2 {
+  font-family: "Font Family 4", sans-serif;
+  line-height: 150px;
+  color: orangered;
+}
+
+.font-class-3 {
+  font-family: "Font Family 5", sans-serif;
+  letter-spacing: 50px;
+  color: rebeccapurple;
+}
+
+.font-class-4 {
+  font-size: 20px;
+  font-weight: bolder;
+  word-spacing: 80px;
+}
