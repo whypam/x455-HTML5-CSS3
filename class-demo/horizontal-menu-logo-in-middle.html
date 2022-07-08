@@ -12,13 +12,15 @@
 
     header {
       background-color: rgba(0, 0, 0, 0.6);
+      /*padding-top: 10px;
+      padding-bottom: 10px;*/
     }
 
     nav ul {
       /* OR nav > ul --- ">" immediate after parent tag */
       list-style: none;
       margin: 0;
-      padding-top: 15px;
+      padding-top: 23px;
     }
 
     /* Ref: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after_style */
@@ -49,7 +51,12 @@
       /* make nav item align hortizontally */
     }
 
-    nav a.logo {
+    #navLogo {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    a.logo {
       width: 70px;
       height: 70px;
       display: block;
@@ -63,41 +70,151 @@
       flex-wrap: wrap;
       flex-direction: row;
       justify-content: space-between;
-      padding-top: 10px;
-      padding-bottom: 10px;
+    }
+
+    #navDropdown {
+      display: none;
+    }
+
+    .dropdown {
+      /* position: absolute; replace it with display: flex in flex-container class */
+      display: block;
+      /*top: 0;*/
+      /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+      left: 0;
+      /* by default, always align to left */
+      /*right: 0;*/
+      /* if dropdown is set to right, dropdown-content should be set to right */
+    }
+
+    .dropbtn {
+      background-color: rgba(0, 102, 102, 0);
+      color: #fff;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      line-height: normal;
+    }
+
+    .dropdown-content {
+      display: none;
+      /* set display to none, so dropdown menu won't show till hover dropdown */
+      position: absolute;
+      /* right: 0; */
+      /* if dropdown is set to right, dropdown-content should be set to right */
+      background-color: rgba(0, 102, 102, 0.8);
+      min-width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      /*z-index: 1;*/
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #339999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover {
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+
+    @media screen and (max-width: 650px) {
+
+      #navLeft,
+      #navRight {
+        display: none;
+        /* hide the nav bar in small screen size */
+      }
+
+      #navDropdown {
+        display: block;
+        /* show dropdown menu and buttuon in small screen size */
+      }
+
+      header {
+        background-color: rgba(0, 0, 0, 0.6);
+        /* padding: top right bottom left */
+      }
+
+      button.dropbtn {
+        padding-top: 23px;
+      }
+
+      .dropdown-content {
+        max-width: 650px;
+        /* set the dropdown-content width same as the @media screen width */
+      }
+
+      a.logo {
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <header class="flex-container">
-    <nav>
-      <ul style="padding-left: 20px;">
-        <li>
-          <a href="https://www.w3schools.com/">w3schools</a>
-        </li>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/">YouTube</a>
-        </li>
-      </ul>
-    </nav>
-    <nav><a class="logo" href="#"></a></nav>
-    <nav>
-      <ul style="padding-left: 20px;">
-        <li>
-          <a href="https://www.w3schools.com/">w3schools</a>
-        </li>
-        <li>
-          <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
-        </li>
-        <li>
-          <a href="https://www.youtube.com/">YouTube</a>
-        </li>
-      </ul>
-    </nav>
+  <header>
+    <div class="flex-container">
+      <!-- horizontal left -->
+      <nav id="navLeft">
+        <ul style="padding-left: 20px;">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- dropdown-menu -->
+      <nav id="navDropdown">
+        <div class="dropdown">
+          <button class="dropbtn">Menu</button>
+          <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Community</a>
+            <a href="#">Partnership</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+      </nav>
+      <!-- center logo -->
+      <nav id="navLogo"><a class="logo" href="#"></a></nav>
+      <!-- horizontal right -->
+      <nav id="navRight">
+        <ul style="padding-left: 20px;">
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Partnership</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
   </header>
   <!-- Inline CSS -->
   <section style="width: auto; height: 300px; background-color: aquamarine;"></section>
