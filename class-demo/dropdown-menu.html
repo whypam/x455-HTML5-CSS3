@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dropdown Menu</title>
+  <style>
+    /* Internal CSS */
+    body {
+      margin: 0;
+      /* content uses up full width and fill height of the browser */
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+      /* padding: top right bottom left */
+      padding: 50px 0px 0px 0px;
+    }
+
+    .dropdown {
+      position: absolute;
+      display: block;
+      top: 0;
+      /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+      left: 0;
+      /* by default, always align to left */
+      /*right: 0;*/
+      /* if dropdown is set to right, dropdown-content should be set to right */
+    }
+
+    .dropbtn {
+      background-color: rgba(0, 102, 102, 0);
+      color: #fff;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      line-height: normal;
+    }
+
+    .dropdown-content {
+      display: none;
+      /* set display to none, so dropdown menu won't show till hover dropdown */
+      position: absolute;
+      /* right: 0; */
+      /* if dropdown is set to right, dropdown-content should be set to right */
+      background-color: rgba(0, 102, 102, 0.8);
+      min-width: 280px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      /*z-index: 1;*/
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #339999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover {
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="https://www.w3schools.com/">w3schools</a>
+          <a href="https://css-tricks.com/">CSS-tricks</a>
+          <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
+          <a href="https://www.youtube.com/">YouTube</a>
+          <a href="https://www.yahoo.com/">Yahoo</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- Inline CSS -->
+  <section style="width: auto; height: 600px; background-color: aquamarine;"></section>
+</body>
+
+</html>

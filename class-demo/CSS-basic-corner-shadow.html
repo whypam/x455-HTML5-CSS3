@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- The viewport is the user's visible area of a web page. -->
+  <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+  <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basic Corner and shadow</title>
+  <!-- https://cssgenerator.org/box-shadow-css-generator.html -->
+  <style>
+    /* Internal CSS */
+    .corner-demo-box {
+      width: 200px;
+      height: 150px;
+      margin: 20px;
+      background-color: #73AD21;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .simple-rounded {
+      border-radius: 8px;
+    }
+
+    .top-right-bottom-left-rounded {
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 20px;
+    }
+
+    .oval {
+      border-radius: 50%;
+    }
+
+    .shadow {
+      /* h-offset v-offset blur spread color */
+      box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.5);
+    }
+
+    .inner-shadow {
+      /* h-offset v-offset blur spread color | inset */
+      /* Changes the shadow from an outer shadow (outset) to an inner shadow */
+      box-shadow: 8px 8px 8px 3px rgba(0, 0, 0, 0.5) inset;
+    }
+
+    .text-shadow {
+      /* h-shadow v-shadow blur-radius color */
+      text-shadow: 6px 8px 1px rgba(0, 0, 0, 0.5);
+    }
+
+    .hollow {
+      border-radius: 25px;
+      border: 2px solid #73AD21;
+      width: 200px;
+      height: 150px;
+      margin: 20px;
+      padding: 30px;
+      text-align: center;
+    }
+
+    .oval-image {
+      border-radius: 50%;
+      background: url(./assets/images/lemon-lime-01.jpg);
+      background-position: right bottom;
+      background-repeat: no-repeat;
+      margin: 20px;
+      padding: 120px;
+      width: 300px;
+      height: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.5), 0 6px 20px 2px rgba(0, 0, 0, 0.3);
+      /* use browser inspector mode to see the difference between content-box and border-box */
+      /* box-sizing: content-box; */
+      /* total image width = 40px padding + 300px width */
+      box-sizing: border-box;
+      /* total image width = 40px padding + 260px width */
+    }
+
+    .uneven-corners-image {
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 20px;
+      background: url(./assets/images/chili-02.jpg);
+      background-position: left top;
+      background-repeat: no-repeat;
+      margin: 20px;
+      padding: 10px 230px 0 10px;
+      width: 400px;
+      height: 300px;
+      text-align: center;
+      box-shadow: 0 4px 8px 3px rgba(0, 0, 0, 0.5), 0 6px 20px 2px rgba(0, 0, 0, 0.3);
+      /* use browser inspector mode to see the difference between content-box and border-box */
+      /* box-sizing: content-box; */
+      /* total image width = 40px padding + 300px width */
+      box-sizing: border-box;
+      /* total image width = 40px padding + 260px width */
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Corners and Shadows</h1>
+  <h3>Rounded corners:</h3>
+  <div class="corner-demo-box simple-rounded">Rounded corners</div>
+  <hr>
+
+  <h3>Top right bottom left:</h3>
+  <div class="corner-demo-box top-right-bottom-left-rounded">Top right bottom left</div>
+  <hr>
+
+  <h3>Circle / Oval:</h3>
+  <div class="corner-demo-box oval">Circle / Oval</div>
+  <hr>
+
+  <h3>Shadow:</h3>
+  <div class="corner-demo-box shadow">Shadow</div>
+  <hr>
+
+  <h3>Inner shadow:</h3>
+  <div class="corner-demo-box inner-shadow">Inner shadow</div>
+  <hr>
+
+  <h3>Shadow on this text:</h3>
+  <div class="corner-demo-box text-shadow">Shadow on this text</div>
+  <hr>
+
+  <h3>Rounded corners for an element with a border:</h3>
+  <div class="hollow">Rounded corners hollow</div>
+  <hr>
+
+  <h3>Circle / oval shape with shadow for an element with a background image:</h3>
+  <div class="oval-image">Image with shadow</div>
+  <hr>
+
+  <h3>Uneven corners image with shadow:</h3>
+  <div class="uneven-corners-image">Uneven corners image with shadow</div>
+  <hr>
+</body>
+
+</html>

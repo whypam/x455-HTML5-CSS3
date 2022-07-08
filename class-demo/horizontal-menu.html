@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nav Bar Responsive</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    nav ul {
+      /* OR nav > ul --- ">" immediate after parent tag */
+      list-style: none;
+      margin: 0;
+    }
+
+    /* Ref: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after_style */
+    /* inserts something after the content */
+    /* if removed, the content of next tag will be right next to the nav bar */
+    nav ul::after {
+      /* OR nav > ul::after --- ">" immediate after parent tag */
+      content: "";
+      display: block;
+      clear: both;
+      /* The element is pushed below both left and right floated elements. Ref: https://www.w3schools.com/cssref/pr_class_clear.asp */
+    }
+
+    nav ul li a {
+      /* OR nav > ul > li > a --- ">" immediate after parent tag */
+      /* allows to set a width and height on the element, ref: https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
+      display: inline-block;
+      color: #fff;
+      /* padding: top right bottom left */
+      padding: 10px 20px 15px 20px;
+      text-decoration: none;
+      width: auto;
+    }
+
+    /* top level */
+    nav>ul>li {
+      float: left;
+      /* make nav item align hortizontally */
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li>
+          <a href="https://www.w3schools.com/">w3schools</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/">YouTube</a>
+        </li>
+        <li>
+          <a href="https://www.yahoo.com/">Yahoo</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Inline CSS -->
+  <section style="width: auto; height: 600px; background-color: aquamarine;"></section>
+</body>
+
+</html>

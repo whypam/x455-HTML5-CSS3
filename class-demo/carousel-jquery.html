@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>jQuery Carousel</title>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: red;
+    }
+
+    .image-responsive {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slick-list {
+      margin: 0 -5px;
+    }
+
+    .slick-slide {
+      padding: 0 5px;
+    }
+
+    .your-class div p {
+      margin: 5px 0 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jQuery Carousel</h1>
+
+  <div class="container">
+    <div class="your-class">
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>1. i am text</p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>2. i am text</p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>3. i am text</p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>4. i am text</p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>5. i am text</p>
+      </div>
+      <div>
+        <img class="image-responsive" src="https://via.placeholder.com/450x300" />
+        <p>6. i am text</p>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        dots: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+      });
+    });
+  </script>
+</body>
+
+</html>
