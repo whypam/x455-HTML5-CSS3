@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Horizontal Manu</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      background-color: #F5F5F5;
+      width: 100%;
+      box-sizing: border-box;
+      padding: 0 20px;
+    }
+
+    header a.logo {
+      width: 60px;
+      height: 60px;
+      display: block;
+      background: url(./assets/images/dish-01.png) no-repeat 0 0;
+      /* 0 0 are x,y coordination in relation to width and height setting */
+      background-size: contain;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+
+    header nav>ul {
+      margin: 0;
+      padding-top: 30px;
+      display: flex;
+    }
+
+    header nav ul li {
+      list-style: none;
+      position: relative;
+    }
+
+    header nav ul li ul {
+      position: absolute;
+      left: 0;
+      background-color: rgba(0, 102, 102, 0.4);
+      display: none;
+      padding-left: 0;
+    }
+
+    header nav ul li.active ul {
+      display: block;
+    }
+
+    header nav ul li ul li {
+      display: block;
+      width: 200px;
+    }
+
+    header nav ul li a {
+      height: 50px;
+      line-height: 50px;
+      padding: 0 20px;
+      color: #003262;
+      text-decoration: none;
+      display: block;
+    }
+
+    header nav ul li a:hover,
+    header nav ul li a.active {
+      color: #003262;
+      background: #5778A7;
+    }
+
+    .menu-toggle {
+      color: #003262;
+      line-height: 50px;
+      font-size: 24px;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      header a.logo {
+        width: 40px;
+        height: 40px;
+
+      }
+
+      header nav {
+        width: 80%;
+        background-color: rgba(0, 102, 102, 0.4);
+        display: none;
+        margin-top: 50px;
+      }
+
+      header nav.active {
+        display: block;
+      }
+
+      header nav ul {
+        display: block;
+        text-align: center;
+        padding-left: 0;
+      }
+
+      header nav ul li ul li a {
+        color: white;
+      }
+
+      header nav ul li ul li a:hover {
+        background-color: #3B7EA1;
+      }
+
+      header nav ul li.active ul {
+        position: relative;
+        background: #5778A7;
+      }
+
+      header nav ul li ul li {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div><a class="logo" href="#"></a></div>
+    <nav>
+      <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Services</a>
+          <ul>
+            <li><a href="#">Adminstration</a></li>
+            <li><a href="#">New Hire Onboarding</a></li>
+            <li><a href="#">Project Management</a></li>
+            <li><a href="#">Software Development</a></li>
+            <li><a href="#">UX Research</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Products</a>
+          <ul>
+            <li><a href="#">Household Appliances</a></li>
+            <li><a href="#">Corporate Furniture</a></li>
+            <li><a href="#">Shipping Supplies</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Community</a>
+          <ul>
+            <li><a href="#">Bay Area</a></li>
+            <li><a href="#">Central California</a></li>
+          </ul>
+        </li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+    <div class="menu-toggle"><span class="fa fa-bars"></span></div>
+  </header>
+  <!-- Inline CSS -->
+  <section style="width: auto; height: 300px; background-color: #efdfdf;"></section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('.menu-toggle').click(function () {
+        $('nav').toggleClass('active')
+      })
+      $('ul li').click(function () {
+        $(this).siblings().removeClass('active');
+        $(this).toggleClass('active');
+      })
+    })
+  </script>
+</body>
+
+</html>
