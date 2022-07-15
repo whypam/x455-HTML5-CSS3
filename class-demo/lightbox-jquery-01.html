@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lightbox JQuery</title>
+  <!-- 1. Ref. link using lightbox: https://lokeshdhakar.com/projects/lightbox2/ --
+      -- 2. show students how to read instructions and use plugin --
+      -- 3. provide students with lightbox.min.css, lightbox.min.js and lightbox-plus-jquery.min.js --
+      -- 4. need to close.png, loading.gif, next.png and prev.png assets/image folder to use -->
+  <link rel="stylesheet" type="text/css" href="assets/stylesheets/lightbox.min.css" />
+</head>
+
+<body>
+  <article>
+    <div>
+      <h1>Chef Page</h1>
+      <a href="./assets/images/chef-alice-waters.jpg" data-lightbox="chef" data-title="Alice Waters">
+        <img src="./assets/images/chef-alice-waters-150x150.jpg" alt="Chef Alice Waters" style="width: 300px;" />
+      </a>
+      <a href="./assets/images/chef-april-bloomfield.jpg" data-lightbox="chef" data-title="April Bloomfield">
+        <img src="./assets/images/chef-april-bloomfield-150x150.jpg" alt="Chef April Bloomfield"
+          style="width: 300px;" />
+      </a>
+      <a href="./assets/images/chef-elena-arzak.jpg" data-lightbox="chef" data-title="Elena Arzak">
+        <img src="./assets/images/chef-elena-arzak-150x150.jpg" alt="Chef Elena Arzak" style="width: 300px;" />
+      </a>
+      <a href="./assets/images/chef-elizabeth-falkner.jpg" data-lightbox="chef" data-title="Elizabeth Falkner">
+        <img src="./assets/images/chef-elizabeth-falkner-150x150.jpg" alt="Chef Elizabeth Falkner"
+          style="width: 300px;" />
+      </a>
+    </div>
+  </article>
+  <!-- loading jquery first, then lightbox -- 
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="assets/javascripts/lightbox.min.js"
+    ></script> 
+    -- loading jquery first, then lightbox -->
+
+  <!-- OR using lightbox combin with jquery script -->
+  <script type="text/JavaScript" src="assets/javascripts/lightbox-plus-jquery.min.js"></script>
+</body>
+
+</html>

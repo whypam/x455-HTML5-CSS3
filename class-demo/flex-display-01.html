@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flex Display</title>
+  <style>
+    .flex-container {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0;
+    }
+
+    .flex-01 {
+      width: 25%;
+    }
+
+    .flex-02 {
+      width: 20%;
+    }
+
+    .flex-03 {
+      width: 33%;
+    }
+
+    .flex-04 {
+      width: 50%;
+    }
+
+    .scroll-x {
+      overflow-x: scroll;
+      padding-top: 20px;
+    }
+
+    figure {
+      margin: 0;
+      padding: 0 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3 style="text-align: center;">More Seasonings</h3>
+  <!-- BEG parent -->
+  <h3> Images with Figure Capture in Flex Container</h3>
+
+  <div class="flex-container">
+    <!-- BEG children -->
+    <div class="flex-01">
+      <!-- div 1 - adjacent sibling of div 2 -->
+      <figure>
+        <a href="#"><img src="./assets/images/chili-02.jpg" alt="Chili" style="width: 100%;" /></a>
+        <figcaption style="float: right;">$5/lb</figcaption>
+        <figcaption>Chili</figcaption>
+      </figure>
+    </div>
+    <div class="flex-01">
+      <!-- div 2 - adjacent sibling of div 1 and 3 -->
+      <figure>
+        <a href="#"><img src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" style="width:100%;" /></a>
+        <figcaption style="float: right;">$4/lb</figcaption>
+        <figcaption>Cinnanmon</figcaption>
+      </figure>
+    </div>
+    <div class="flex-01">
+      <!-- div 3 - adjacent sibling of div 2 and 4 -->
+      <figure>
+        <a href="#"><img src="./assets/images/garlic-01.jpg" alt="Garlic" style="width: 100%;" /></a>
+        <figcaption style="float: right;">$3/lb</figcaption>
+        <figcaption>Garlic</figcaption>
+      </figure>
+    </div>
+    <div class="flex-01">
+      <!-- div 4 - adjacent sibling of div 3 and 5 -->
+      <figure>
+        <a href="#"><img src="./assets/images/ginger-01.jpg" alt="Ginger" style="width:100%;" /></a>
+        <figcaption style="float: right;">$2/lb</figcaption>
+        <figcaption>Ginger</figcaption>
+      </figure>
+    </div>
+    <!-- children -->
+  </div>
+
+  <!-- END parent -->
+
+  <h3>Images in Scrollable Area</h3>
+  <div class="scroll-x">
+    <div class="flex-container" style="padding-bottom: 10px;">
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic" />
+    </div>
+  </div>
+
+  <!-- clickable image in scrollable area -->
+  <h3> Clickable Images in Scrollable Area</h3>
+  <div class="scroll-x">
+    <div class="flex-container" style="padding-bottom: 10px;">
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/chili-02.jpg" alt="Chili"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+      <img class="flex-02" src="./assets/images/garlic-01.jpg" alt="Garlic"
+        onclick="window.location.href='./hero-screen-text.html';" style="cursor: pointer;" />
+    </div>
+  </div>
+
+  <div class="flex-container" style="padding-bottom: 10px;">
+    <img class="flex-03" src="./assets/images/chili-02.jpg" alt="Chili" />
+    <img class="flex-03" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+    <img class="flex-03" src="./assets/images/garlic-01.jpg" alt="Garlic" />
+  </div>
+
+  <div class="flex-container" style="padding-bottom: 10px;">
+    <img class="flex-04" src="./assets/images/chili-02.jpg" alt="Chili" />
+    <img class="flex-04" src="./assets/images/cinnamon-01.jpg" alt="Cinnamon" />
+  </div>
+</body>
+
+</html>
