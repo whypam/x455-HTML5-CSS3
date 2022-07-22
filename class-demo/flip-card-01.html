@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Flip Card</title>
+  <style>
+    * {
+      /* set how the total width and height of an element is calculated
+           border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+           If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, 
+           and the content box will shrink to absorb that extra width.
+           Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 0px;
+    }
+
+    /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      margin-bottom: 35px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+      /* Remove this if you don't want the 3D effect */
+    }
+
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+      color: black;
+    }
+
+    /* Style the back side */
+    .flip-card-back {
+      transform: rotateY(180deg);
+    }
+
+    /* Style the front side text */
+    .flip-card-front-text {
+      color: #262727;
+      padding: 10px;
+    }
+
+    /* Style the back side text */
+    .flip-card-back-text {
+      color: #339999;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      font-size: 1.1em;
+      font-weight: normal;
+      letter-spacing: 2px;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>Guess Who They Are...</h3>
+  <section class="flex-container">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="flip-card-front-text" style="background-color: cadetblue; width: 300px; height: 300px">
+            <strong>Who was responsible for sharing French cuisine with
+              America?</strong>
+            <p>
+              Her cookbooks made home cooking a breeze, but did you know
+              that she only discovered her passion for cooking late into her
+              thirties? Her first cookbook catapulted her to stardom when
+              she decided to make an omelette on live TV. She was offered a
+              TV show which turned her into the world’s first-ever celebrity
+              chef. Brings a new meaning to ladies first!
+            </p>
+          </div>
+        </div>
+        <div class="flip-card-back">
+          <span class="flip-card-back-text">
+            Julia Child
+          </span>
+          <img src="./assets/images/chef-julia-child-150x150.jpg" alt="Chef Julia Child" style="width: 300px;" />
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
