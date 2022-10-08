@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- The viewport is the user's visible area of a web page. -->
+  <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+  <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basic Position</title>
+  <!-- reference: https://www.w3schools.com/css/css_positioning.asp -->
+  <style>
+    /* Internal CSS */
+    * {
+      /* set how the total width and height of an element is calculated
+           border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+           If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, 
+           and the content box will shrink to absorb that extra width.
+           Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+      box-sizing: border-box;
+    }
+
+    .parent-box {
+      width: 100%;
+      height: 1500px;
+      padding: 30px;
+      background: cornflowerblue;
+    }
+
+    .parent-box>h1 {
+      color: white;
+    }
+
+    .child-box {
+      padding: 30px;
+    }
+
+    .background-darkturquoise {
+      background-color: darkturquoise;
+    }
+
+    .background-deeppink {
+      background-color: indigo;
+    }
+
+    .child-relative {
+      position: relative;
+      height: 200px;
+      width: 600px;
+    }
+
+    .child-absolute {
+      position: absolute;
+      top: 30px;
+      /* top takes precedent over bottom */
+      left: 150px;
+      /* left takes precedent over right */
+      right: 50px;
+      bottom: 10px;
+      width: 400px;
+      height: 110px;
+      color: white;
+    }
+  </style>
+</head>
+
+<body onscroll="getCoordination()">
+  <div class="parent-box">
+    <h1>CSS Relative / Absolution Position</h1>
+    <div class="child-relative child-box background-darkturquoise">RELATIVE BOX
+      <!-- parent has darkturquoise background color -->
+      <!-- child has deeppink background color that cascaded the parent's color -->
+      <!-- the child also cascaded the parent's box size and position -->
+      <div class="child-absolute child-box background-deeppink">
+        ABSOLUTE BOX
+        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
+        positioned relative to the viewport, like fixed):
+      </div>
+    </div>
+    <h3 style="color: white">Scroll to check the relative and absolute boxes coordinations / positions.</h3>
+    <h3 style="color: white;">The <span style="color: indigo;">Purple box</span> always keeps a
+      constant distance from the top, left, bottom & right of the <span style="color: darkturquoise;">Green box.</span>
+    </h3>
+    <div style="padding-top: 230px">
+      <h2 id="coordination1" style="color: white; font-size: 20px; float: left;"></h2>
+      <h2 id="coordination2" style="color: white; padding-left: 50px; font-size: 20px; float: left;">
+      </h2>
+    </div>
+
+  </div>
+
+  <script>
+    function getCoordination() {
+      const element1 = document.querySelector(".child-relative");
+      const rect1 = element1.getBoundingClientRect();
+
+      const element2 = document.querySelector(".child-absolute");
+      const rect2 = element2.getBoundingClientRect();
+
+      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + rect1.left.toFixed() + "<hr>Right: " + rect1.right.toFixed() + "<hr>Top: " + rect1.top.toFixed() + "<hr>Width: " + rect1.width + "<hr>Height: " + rect1.height;
+      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + rect2.left.toFixed() + "<hr>Right: " + rect2.right.toFixed() + "<hr>Top: " + rect2.top.toFixed() + "<hr>Width: " + rect2.width + "<hr>Height: " + rect2.height;
+    }
+  </script>
+
+</body>
+
+</html>
