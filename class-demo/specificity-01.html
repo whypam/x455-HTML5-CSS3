@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Specificity</title>
+  <style>
+    /* element */
+    h2 {
+      color: rgb(255, 111, 0);
+    }
+
+    /* id */
+    #color-id {
+      color: green;
+    }
+
+    /* class */
+    .color-class {
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- inline over id -->
+  <h2 id="color-id" style="color:red;">More Seasonings</h2>
+  <!-- id over class -->
+  <h2 id="color-id" class="color-class">More Seasonings</h2>
+  <!-- class over element -->
+  <h2 class="color-class">More Seasonings</h2>
+  <!-- element finall gets its defined color -->
+  <h2>More Seasonings</h2>
+</body>
+
+</html>
