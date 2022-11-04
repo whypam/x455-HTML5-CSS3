@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Table Sortable</title>
+  <style>
+    table#your-table-items {
+      border-collapse: collapse;
+      /* in inspector mode - easier to see the difference between collapse and no collapse */
+      border: 1px solid rgba(154, 154, 154, 0.75);
+      text-align: center;
+    }
+
+    table#your-table-items th:nth-child(1),
+    table#your-table-items td:nth-child(1) {
+      width: 35%;
+    }
+
+    table#your-table-items th:nth-child(2),
+    table#your-table-items td:nth-child(2) {
+      width: 30%;
+    }
+
+    table#your-table-items th:nth-child(3),
+    table#your-table-items td:nth-child(3) {
+      width: 20%;
+    }
+
+    table#your-table-items th:nth-child(4),
+    table#your-table-items td:nth-child(4) {
+      width: 15%;
+    }
+
+    table#your-table-items thead {
+      font-size: 0.7em;
+      text-transform: uppercase;
+    }
+
+    table#your-table-items thead th {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 8px;
+    }
+
+    table#your-table-items thead th:hover {
+      color: #fff;
+      background-color: #339999;
+      cursor: pointer;
+    }
+
+    table#your-table-items thead th.tablesorter-headerAsc,
+    table#your-table-items thead th.tablesorter-headerDesc {
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+
+    table#your-table-items tbody {
+      font-size: 0.9em;
+      line-height: 15px;
+    }
+
+    /*** make sure table#your-table-items tbody tr:nth-child(even) defined before table#your-table-items tbody tr:hover */
+    /*** otherwise, it would need to define table#your-table-items tbody tr:nth-child(even):hover*/
+    table#your-table-items tbody tr:nth-child(even) {
+      background: rgba(154, 154, 154, 0.25);
+    }
+
+    table#your-table-items tbody tr:hover {
+      color: #fff;
+      background-color: #339999;
+    }
+
+    table#your-table-items tbody td {
+      padding: 8px 20px;
+      border-top: 1px solid rgba(154, 154, 154, 0.75);
+      border-right: 1px solid rgba(154, 154, 154, 0.75);
+    }
+
+    table#your-table-items tbody td img {
+      width: 100px;
+      margin: 0 10px 0 0;
+      border: 1px solid rgba(154, 154, 154, 0.75);
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <div>
+      <h1>Utensil Page</h1>
+      <p>
+        Here is something about cooking utensils... lorem ipsum dolor sit amet
+        consectetur adipisicing elit sed do eiusmod tempor incididunt ut
+        labore et dolore magna aliqua.
+      </p>
+      <table id="your-table-items">
+        <thead>
+          <tr>
+            <th>Utensil</th>
+            <th>Type</th>
+            <th>Name</th>
+            <th>Size</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img src="./assets/images/blender-01.jpeg" alt="Blender" /></td>
+            <td>Electronic Appliance</td>
+            <td>Blender</td>
+            <td>Big</td>
+          </tr>
+          <tr>
+            <td><img src="./assets/images/cutting-board-01.jpeg" alt="Cutting Board" /></td>
+            <td>Hand Tool</td>
+            <td>Cutting Board</td>
+            <td>Small</td>
+          </tr>
+          <tr>
+            <td>
+              <img src="./assets/images/fry-pan-02.jpeg" alt="Fry Pan" />
+            </td>
+            <td>Cookware</td>
+            <td>Fry Pan</td>
+            <td>Medium</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </article>
+  <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+  <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/JavaScript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script>
+  <!-- BEG JavaScript -->
+  <script>
+    $(document).ready(function () {
+      $("table#your-table-items").tablesorter({
+        sortList: [[2, 0]],
+        CssAsc: "tablesorter-headerAsc",
+        CssDesc: "tablesorter-headerDesc"
+      });
+    });
+  </script>
+  <!-- END JavaScript -->
+</body>
+
+</html>
