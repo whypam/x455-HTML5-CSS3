@@ -20,86 +20,85 @@
       box-sizing: border-box;
     }
 
-    .parent-box {
+    body {
+      margin: 0;
+      color: white;
+    }
+
+    h2 {
+      font-size: 20px; 
+      float: left;
+    }
+
+    .container {
       width: 100%;
       height: 1500px;
-      padding: 30px;
       background: cornflowerblue;
     }
 
-    .parent-box>h1 {
-      color: white;
-    }
-
-    .child-box {
-      padding: 30px;
-    }
-
-    .background-darkturquoise {
-      background-color: darkturquoise;
-    }
-
-    .background-deeppink {
-      background-color: indigo;
-    }
-
-    .child-relative {
+    .relative-box {
       position: relative;
       height: 200px;
-      width: 600px;
+      width: 100%;
+      background-color: darkgreen;
+      
     }
 
-    .child-absolute {
+    .absolute-box {
       position: absolute;
+      left: 30%;
+      right: 10%;
       top: 30px;
-      /* top takes precedent over bottom */
-      left: 150px;
-      /* left takes precedent over right */
-      right: 50px;
-      bottom: 10px;
-      width: 400px;
-      height: 110px;
-      color: white;
+      bottom: 60px;
+      background-color: indigo;
+      overflow: auto;
     }
   </style>
 </head>
 
-<body onscroll="getCoordination()">
-  <div class="parent-box">
+<body>
+  <div class="container">
     <h1>CSS Relative / Absolution Position</h1>
-    <div class="child-relative child-box background-darkturquoise">RELATIVE BOX
-      <!-- parent has darkturquoise background color -->
-      <!-- child has deeppink background color that cascaded the parent's color -->
-      <!-- the child also cascaded the parent's box size and position -->
-      <div class="child-absolute child-box background-deeppink">
+    <div class="relative-box">
+      RELATIVE BOX
+      <div class="absolute-box">
         ABSOLUTE BOX
-        An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of
-        positioned relative to the viewport, like fixed):
+        <p>An element with position: absolute; is positioned relative to the nearest positioned ancestor, instead of
+          positioned relative to the viewport.</p>
       </div>
     </div>
-    <h3 style="color: white">Scroll to check the relative and absolute boxes coordinations / positions.</h3>
-    <h3 style="color: white;">The <span style="color: indigo;">Purple box</span> always keeps a
-      constant distance from the top, left, bottom & right of the <span style="color: darkturquoise;">Green box.</span>
-    </h3>
-    <div style="padding-top: 230px">
-      <h2 id="coordination1" style="color: white; font-size: 20px; float: left;"></h2>
-      <h2 id="coordination2" style="color: white; padding-left: 50px; font-size: 20px; float: left;">
+    <p>Scroll or resize browser to check the relative and absolute boxes coordinations / positions.</p>
+    <p>The <span style="color: indigo;">Purple box</span> always keeps a
+      constant distance from the top, left, bottom & right of the <span style="color: darkgreen;">Green box.</span>
+    </p>
+    <div style="padding-top: 30px">
+      <h2 id="coordination1" style="color: darkgreen;"></h2>
+      <h2 id="coordination2" style="color: indigo; padding-left: 50px;">
       </h2>
     </div>
 
   </div>
 
   <script>
-    function getCoordination() {
-      const element1 = document.querySelector(".child-relative");
-      const rect1 = element1.getBoundingClientRect();
+    const container = document.querySelector(".container");
+    const element1 = document.querySelector(".relative-box");
+    const element2 = document.querySelector(".absolute-box");
+    
+    container.addEventListener("wheel", () => {
+      const box1 = element1.getBoundingClientRect();
+      const box2 = element2.getBoundingClientRect();
+    
+      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + box1.left.toFixed() + "<hr>Right: " + box1.right.toFixed() + "<hr>Top: " + box1.top.toFixed() + "<hr>Bottom: " + box1.bottom.toFixed() + "<hr>Width: " + box1.width + "<hr>Height: " + box1.height;
+      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + box2.left.toFixed() + "<hr>Right: " + box2.right.toFixed() + "<hr>Top: " + box2.top.toFixed() + "<hr>Bottom: " + box2.bottom.toFixed() + "<hr>Width: " + box2.width + "<hr>Height: " + box2.height;
+    })
 
-      const element2 = document.querySelector(".child-absolute");
-      const rect2 = element2.getBoundingClientRect();
-
-      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + rect1.left.toFixed() + "<hr>Right: " + rect1.right.toFixed() + "<hr>Top: " + rect1.top.toFixed() + "<hr>Width: " + rect1.width + "<hr>Height: " + rect1.height;
-      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + rect2.left.toFixed() + "<hr>Right: " + rect2.right.toFixed() + "<hr>Top: " + rect2.top.toFixed() + "<hr>Width: " + rect2.width + "<hr>Height: " + rect2.height;
-    }
+    window.addEventListener("resize", () => {
+      const box1 = element1.getBoundingClientRect();
+      const box2 = element2.getBoundingClientRect();
+    
+      document.querySelector("#coordination1").innerHTML = "Relative position<hr>Left: " + box1.left.toFixed() + "<hr>Right: " + box1.right.toFixed() + "<hr>Top: " + box1.top.toFixed() + "<hr>Bottom: " + box1.bottom.toFixed() + "<hr>Width: " + box1.width + "<hr>Height: " + box1.height;
+      document.querySelector("#coordination2").innerHTML = "Absolute position<hr>Left: " + box2.left.toFixed() + "<hr>Right: " + box2.right.toFixed() + "<hr>Top: " + box2.top.toFixed() + "<hr>Bottom: " + box2.bottom.toFixed() + "<hr>Width: " + box2.width + "<hr>Height: " + box2.height;
+    })
   </script>
 
 </body>
