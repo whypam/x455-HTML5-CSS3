@@ -52,7 +52,7 @@
   </style>
 </head>
 
-<body onscroll="getCoordination()">
+<body>
   <div class="parent-box">
     <h1>CSS Fixed Position</h1>
     <div class="child-fixed child-box background-green">BOX FOUR - fixed</div>
@@ -62,11 +62,14 @@
   </div>
 
   <script>
-    function getCoordination() {
-      const element = document.querySelector(".child-fixed");
+    const parentBox = document.querySelector(".parent-box");
+    const element = document.querySelector(".child-fixed");
+    
+    parentBox.addEventListener("wheel", () => {
       const rect = element.getBoundingClientRect();
       document.querySelector("#coordination").innerHTML = "Fixed position<hr>Left: " + rect.left.toFixed() + "<hr>Top: " + rect.top.toFixed() + "<hr>Width: " + rect.width + "<hr>Height: " + rect.height;
-    }
+      
+    })
   </script>
 
 </body>
