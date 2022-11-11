@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accordion JavaScript</title>
+  <style>
+    article {
+      width: 600px;
+      padding: 20px 100px;
+    }
+
+    .accordion {
+      color: #00a2ff;
+      cursor: pointer;
+      font-size: 15px;
+      padding-bottom: 10px;
+    }
+
+    .active,
+    .accordion:hover {
+      color: #339999;
+    }
+
+    .panel {
+      display: none;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h3>Learn More About Cookery Knives</h3>
+    <div>
+      <h4>Topic 1</h4>
+      <p>
+        Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque,
+        id pulvinar odio lorem non turpis. Nullam sit amet enim. Lorem ipsum
+        dolor sit amet, consect etuer adipiscing elit. Orci magna rhoncus
+        neque, id pulvinar odio lorem non turpis.
+      </p>
+      <p class="panel">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolorte eu fugiat nulla pariatur. Excepteur sint occaecat
+        cupidatat non proident, sunt in culpa qui officia deserunt mollit
+        anim id est laborum. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+      </p>
+      <div class="accordion" style="text-align: right;">More</div>
+    </div>
+
+  </article>
+</body>
+<!-- BEG JavaScript -->
+<script>
+  var acc = document.getElementsByClassName("accordion");
+  var i;
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var panel = this.previousElementSibling;
+      if (panel.style.display === "block") {
+        panel.style.display = "none";
+        this.innerHTML = "More";
+      } else {
+        panel.style.display = "block";
+        this.innerHTML = "Less";
+      }
+    });
+  }
+</script>
+<!-- END JavaScript -->
+
+</html>
