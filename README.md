@@ -48,8 +48,8 @@ In this course, you will develop a capstone project that is a website with six p
   - Prototype
   - Coding Exercise (2x)
   
-- Class Participation
+- Class Participation and Peer Review
 
-- 1 Presentation (final project)
+- 1 Presentation and Peer Review (final project)
 
 
