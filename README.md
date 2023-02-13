@@ -154,9 +154,9 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
 #### Figma
 
 • Sign up [https://www.figma.com/](https://www.figma.com/)
-• Introduction – Figma for UX/UI Design tutorial [https://youtu.be/keoL0B7NaEs]https://youtu.be/keoL0B7NaEs)
-• Free Figma UX Design UI Essential Course [https://youtu.be/kbZejnPXyLM]https://youtu.be/kbZejnPXyLM)
-• Figma tutorial for Beginners: Complete Website from Start to Finish [https://youtu.be/HZuk6Wkx_Eg]https://youtu.be/HZuk6Wkx_Eg)
+• Introduction – Figma for UX/UI Design tutorial [https://youtu.be/keoL0B7NaEs](https://youtu.be/keoL0B7NaEs)
+• Free Figma UX Design UI Essential Course [https://youtu.be/kbZejnPXyLM](https://youtu.be/kbZejnPXyLM)
+• Figma tutorial for Beginners: Complete Website from Start to Finish [https://youtu.be/HZuk6Wkx_Eg](https://youtu.be/HZuk6Wkx_Eg)
 
 ## Assignments
 
