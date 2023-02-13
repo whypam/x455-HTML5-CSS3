@@ -132,7 +132,7 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 
 ## Final Project Demo/Sample
 
-[https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html]https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html
+[https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html
 A sample website that is composed of 6 pages with all the required components explained above.
 
 ## Class demo
@@ -144,26 +144,26 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
 
 #### Visual Studio Code:
 
-• Download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
-• Setup [https://youtu.be/4NfFFsQC77M](https://youtu.be/4NfFFsQC77M)
-• Get started [https://code.visualstudio.com/docs/introvideos/basics](https://code.visualstudio.com/docs/introvideos/basics)
+- Download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
+- Setup [https://youtu.be/4NfFFsQC77M](https://youtu.be/4NfFFsQC77M)
+- Get started [https://code.visualstudio.com/docs/introvideos/basics](https://code.visualstudio.com/docs/introvideos/basics)
 
 #### GitHub:
 
-• GitHub Desktop download [https://desktop.github.com/](https://desktop.github.com/)
-• GitHub Online Account sign up [https://github.com/signup](https://github.com/signup)
+- GitHub Desktop download [https://desktop.github.com/](https://desktop.github.com/)
+- GitHub Online Account sign up [https://github.com/signup](https://github.com/signup)
 
 #### Google Chrome
 
-• Download [https://www.google.com/chrome/](https://www.google.com/chrome/)
-• Set up default browser [https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1)
+- Download [https://www.google.com/chrome/](https://www.google.com/chrome/)
+- Set up default browser [https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1)
 
 #### Figma
 
-• Sign up [https://www.figma.com/](https://www.figma.com/)
-• Introduction – Figma for UX/UI Design tutorial [https://youtu.be/keoL0B7NaEs](https://youtu.be/keoL0B7NaEs)
-• Free Figma UX Design UI Essential Course [https://youtu.be/kbZejnPXyLM](https://youtu.be/kbZejnPXyLM)
-• Figma tutorial for Beginners: Complete Website from Start to Finish [https://youtu.be/HZuk6Wkx_Eg](https://youtu.be/HZuk6Wkx_Eg)
+- Sign up [https://www.figma.com/](https://www.figma.com/)
+- Introduction – Figma for UX/UI Design tutorial [https://youtu.be/keoL0B7NaEs](https://youtu.be/keoL0B7NaEs)
+- Free Figma UX Design UI Essential Course [https://youtu.be/kbZejnPXyLM](https://youtu.be/kbZejnPXyLM)
+- Figma tutorial for Beginners: Complete Website from Start to Finish [https://youtu.be/HZuk6Wkx_Eg](https://youtu.be/HZuk6Wkx_Eg)
 
 ## Assignments
 
