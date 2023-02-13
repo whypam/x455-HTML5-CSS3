@@ -132,13 +132,15 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 
 ## Final Project Demo/Sample
 
-[https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html
 A sample website that is composed of 6 pages with all the required components explained above.
+
+[https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html)
 
 ## Class demo
 
-[https://github.com/whypam/x455-HTML5-CSS3-Spring-2023](https://github.com/whypam/x455-HTML5-CSS3-Spring-2023)
 Coding demo that is done in each lecture will be uploaded to this GitHub repository. You are recommended to clone/make a copy on your computer for reference.
+
+[https://github.com/whypam/x455-HTML5-CSS3-Spring-2023](https://github.com/whypam/x455-HTML5-CSS3-Spring-2023)
 
 ## Other Links
 
