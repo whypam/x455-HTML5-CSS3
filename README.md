@@ -62,7 +62,8 @@ In this course, you will develop a capstone project that is a website with six (
 
 To complete the final project, you will go through multiple development stages.
 
-1. Choose your website topic. Your website topic and content should be legally presentable.  
+1. Choose your website topic. Your website topic and content should be legally presentable.
+
    The following topics are prohibited in the final project:
 
    - Illegal content
