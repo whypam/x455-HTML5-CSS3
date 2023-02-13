@@ -29,54 +29,61 @@ In this course, you will develop a capstone project that is a website with six (
 ## Components
 
 1. Homepage:
-   a. Fullscreen background image
-   b. HTML5 fullscreen video (Bonus)
+
+   - Fullscreen background image
+   - HTML5 fullscreen video (Bonus)
 
 2. 2nd Page:
-   a. Two (2) large paragraphs of text
-   b. Two (2) list items
+
+   - Two (2) large paragraphs of text
+   - Two (2) list items
 
 3. 3rd Page:
-   a. Three (3) slides of carousel
-   b. One (1) scrollable text area
+
+   - Three (3) slides of carousel
+   - One (1) scrollable text area
 
 4. 4th Page:
-   a. HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size
-   b. Ten (10) table entries
-   c. Sortable table by headers
+
+   - HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size
+   - Ten (10) table entries
+   - Sortable table by headers
 
 5. 5th Page:
-   a. Three (3) embedded YouTube videos
-   b. Two (2) accordion text paragraphs
+
+   - Three (3) embedded YouTube videos
+   - Two (2) accordion text paragraphs
 
 6. 6th Page:
-   a. Eight (8) thumbnail images
-   b. Images must have lightbox effect
+   - Eight (8) thumbnail images
+   - Images must have lightbox effect
 
 ## Process
 
 To complete the final project, you will go through multiple development stages.
 
 1. Choose your website topic. Your website topic and content should be legally presentable.  
-    The topic content should be none of the followings:
-   • Illegal content
-   • Sexual
-   • Violent
-   • Drug related
-   • Offensive / Abusive
-   • Discrimination
+   The following topics are prohibited in the final project:
+
+   - Illegal content
+   - Sexual
+   - Violent
+   - Drug related
+   - Offensive / Abusive
+   - Discrimination
 
    Examples of topics:
-   • Portfolio
-   • Hobby
-   • Travelling
-   • Catering
-   • Baking and cooking
-   • Enhancement of existing website
-   • Introduction of certain cultures
-   • Music band
-   • Knowledge sharing
-   • Etc.
+
+   - Portfolio
+   - Hobby
+   - Travelling
+   - Catering
+   - Baking and cooking
+   - Enhancement of existing website
+   - Introduction of certain cultures
+   - Music band
+   - Knowledge sharing
+   - Etc.
 
 2. Wireframing. Wireframing is the technique that promotes communication, generate feedback and tests various options.
 
