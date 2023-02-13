@@ -28,33 +28,33 @@ In this course, you will develop a capstone project that is a website with six (
 
 ## Components
 
-1. _Homepage_:
+1. **Homepage**:
 
    - Fullscreen background image
    - HTML5 fullscreen video (Bonus)
 
-2. _2nd Page_:
+2. **2nd Page**:
 
    - Two (2) large paragraphs of text
    - Two (2) list items
 
-3. _3rd Page_:
+3. **3rd Page**:
 
    - Three (3) slides of carousel
    - One (1) scrollable text area
 
-4. _4th Page_:
+4. **4th Page**:
 
    - HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size
    - Ten (10) table entries
    - Sortable table by headers
 
-5. _5th Page_:
+5. **5th Page**:
 
    - Three (3) embedded YouTube videos
    - Two (2) accordion text paragraphs
 
-6. _6th Page_:
+6. **6th Page**:
    - Eight (8) thumbnail images
    - Images must have lightbox effect
 
@@ -62,7 +62,7 @@ In this course, you will develop a capstone project that is a website with six (
 
 To complete the final project, you will go through multiple development stages.
 
-1. _Choose your website topic_. Your website topic and content should be legally presentable.
+1. **Choose your website topic**. Your website topic and content should be legally presentable.
 
    The following topics are prohibited in the final project:
 
@@ -86,21 +86,21 @@ To complete the final project, you will go through multiple development stages.
    - Knowledge sharing
    - Etc.
 
-2. _Wireframing_. Wireframing is the technique that promotes communication, generate feedback and tests various options.
+2. **Wireframing**. Wireframing is the technique that promotes communication, generate feedback and tests various options.
 
    Wireframing could be in any forms and shapes. You can use any medium to complete your wireframing, such as pen/pencil & paper, Sketch, Photoshop, Illustrator and Figma, etc.
 
-3. _Design_. Design is a mockup of your final project. Mockup is where your project will begin to take shape. When wireframing is meant to quickly come up with a concept, mockup is where things take life.
+3. **Design**. Design is a mockup of your final project. Mockup is where your project will begin to take shape. When wireframing is meant to quickly come up with a concept, mockup is where things take life.
 
    You will add colors and content to your mockup. In this stage, you may not have all the images, videos and text content ready. So you can reuse the same images in multiple places as placeholders. For text content, you may use Lorem Ipsum dummy text [https://www.lipsum.com/](https://www.lipsum.com/).
 
-4. _Prototyping_. Make use of design software (e.g., Figma, Adobe XDesign, InVision) to build simulation of your website. That means the prototype will behave the same or similar to your actual website.
+4. **Prototyping**. Make use of design software (e.g., Figma, Adobe XDesign, InVision) to build simulation of your website. That means the prototype will behave the same or similar to your actual website.
 
    You can choose any software to build the prototype, just make sure the software has an option to create a public share link, because you will need to submit the public share link to Canvas.
 
-5. _Coding_. You will code your website (6 pages) in HTML5 and CSS3 (make use of JavaScript and JQuery) in Visual Studio Code, then test/run it on Google Chrome browser. In this stage, you should have all images, videos and text content needed for your website.
+5. **Coding**. You will code your website (6 pages) in HTML5 and CSS3 (make use of JavaScript and JQuery) in Visual Studio Code, then test/run it on Google Chrome browser. In this stage, you should have all images, videos and text content needed for your website.
 
-6. _Website deployment_. GitHub online account and GitHub Desktop will be utilized for your website deployment. Instructions on creating a GitHub account, installing GitHub Desktop and other GitHub related tasks will be provided throughout the course.
+6. **Website deployment**. GitHub online account and GitHub Desktop will be utilized for your website deployment. Instructions on creating a GitHub account, installing GitHub Desktop and other GitHub related tasks will be provided throughout the course.
 
 ## Peer Review
 
@@ -116,7 +116,7 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 
 ## Final Project Grading
 
-_20% of the course grading_
+**20% of the course grading**
 
 | Home Page | 2nd Page | 3rd Page | 4th Page | 5th Page | 6th Page | Summary, Presentation & Review |
 | --------- | -------- | -------- | -------- | -------- | -------- | ------------------------------ |
