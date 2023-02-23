@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Basic - Font Face</title>
+
+  <style>
+    @font-face {
+      font-family: "Font Family 1";
+      src: url("./assets/fonts/BonheurRoyale-Regular.ttf") format("truetype");
+    }
+
+    @font-face {
+      font-family: "Font Family 2";
+      src: url("./assets/fonts/Gluten-VariableFont_wght.ttf") format("truetype");
+    }
+
+    header {
+      font-family: "Font Family 1", sans-serif;
+    }
+
+    .font-class {
+      font-family: "Font Family 2", sans-serif;
+      line-height: 150px;
+      color: orangered;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    Font Family Class Practice
+  </header>
+
+  <section>
+    Section One
+    <p>I'm a paragraph using default font family defined by p tag...</p>
+  </section>
+  <section class="font-class">
+    Section Two
+    <p>HTML5 CSS3 place holder image</p>
+</body>
+
+</html>
