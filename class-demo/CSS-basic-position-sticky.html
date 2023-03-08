@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <!-- The viewport is the user's visible area of a web page. -->
+  <!-- The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device). -->
+  <!-- The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Sticky Position</title>
+  <!-- reference: https://www.w3schools.com/css/css_positioning.asp -->
+  <style>
+    /* Internal CSS */
+    * {
+      /* set how the total width and height of an element is calculated
+           border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+           If you set an element's width to 100 pixels, that 100 pixels will include any border or padding you added, 
+           and the content box will shrink to absorb that extra width.
+           Reference: https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+      box-sizing: border-box;
+    }
+
+    .parent-box {
+      width: 100%;
+      height: 1500px;
+      padding: 30px;
+      background: cornflowerblue;
+    }
+
+    .parent-box>h1 {
+      color: white;
+    }
+
+    .child-box {
+      padding: 30px;
+    }
+
+    .background-red {
+      background-color: red;
+    }
+
+    .child-sticky {
+      /* sticky has 2 stages:
+           stage 1 - relative when top/left/bottom/right measures are not met yet
+           stage 2 - absolute when top/left/bottom/right measures are met */
+      position: sticky;
+      top: 0px;
+    }
+  </style>
+</head>
+
+<body onscroll="getCoordination()">
+  <div class="parent-box">
+    <h1>CSS Sticky Position</h1>
+    <div class="child-sticky child-box background-red">BOX ONE - sticky</div>
+    <h3 style="color: white;">Scroll to check the sticky box coordination / position. The top position keeps changing
+      till it sticks.</h3>
+    <h2 id="coordination" style="color: white; padding-top:250px; font-size: 20px; float: left;"></h2>
+  </div>
+
+  <script>
+    function getCoordination() {
+      const element = document.querySelector(".child-sticky");
+      const rect = element.getBoundingClientRect();
+      document.querySelector("#coordination").innerHTML = "Sticky position<hr>Left: " + rect.left.toFixed() + "<hr>Top: " + rect.top.toFixed() + "<hr>Width: " + rect.width + "<hr>Height: " + rect.height;
+    }
+  </script>
+</body>
+
+</html>
