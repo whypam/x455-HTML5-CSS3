@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Horizontal Menu with Centered Logo</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    header {
+      background-color: #F5F5F5;
+    }
+
+    nav ul {
+      /* OR nav > ul --- ">" immediate after parent tag */
+      list-style: none;
+      margin: 0;
+    }
+
+    /* Ref: https://www.w3schools.com/cssref/tryit.asp?filename=trycss_sel_after_style */
+    /* inserts something after the content */
+    /* if removed, the content of next tag will be right next to the nav bar */
+    nav ul::after {
+      /* OR nav > ul::after --- ">" immediate after parent tag */
+      content: "";
+      display: block;
+      clear: both;
+      /* The element is pushed below both left and right floated elements. Ref: https://www.w3schools.com/cssref/pr_class_clear.asp */
+    }
+
+    nav ul li a {
+      /* OR nav > ul > li > a --- ">" immediate after parent tag */
+      /* allows to set a width and height on the element, ref: https://www.w3schools.com/css/tryit.asp?filename=trycss_inline-block_span1 */
+      display: inline-block;
+      color: #003262;
+      /* padding: top right bottom left */
+      padding: 10px 20px 10px 10px;
+      text-decoration: none;
+      width: auto;
+    }
+
+    /* top level */
+    nav>ul>li {
+      float: left;
+      /* make nav item align hortizontally */
+    }
+
+    #navLogo {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    a.logo {
+      width: 70px;
+      height: 70px;
+      display: block;
+      background: url(./assets/images/dish-01.png) no-repeat 0 0;
+      /* 0 0 are x,y coordination in relation to width and height setting */
+      background-size: contain;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #navDropdown {
+      display: none;
+    }
+
+    .dropdown {
+      display: block;
+      left: 0;
+    }
+
+    .dropbtn {
+      background-color: rgba(0, 102, 102, 0);
+      color: #003262;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      line-height: normal;
+    }
+
+    .dropbtn:hover {
+      color: #ffffff;
+    }
+
+    .dropdown-content {
+      display: none;
+      /* set display to none, so dropdown menu won't show till hover dropdown */
+      position: absolute;
+      background-color: rgba(0, 102, 102, 0.8);
+      min-width: 100%;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      /*z-index: 1;*/
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #339999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover {
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+
+    @media screen and (max-width: 650px) {
+
+      #navLeft,
+      #navRight {
+        display: none;
+        /* hide the nav bar in small screen size */
+      }
+
+      #navDropdown {
+        display: block;
+        /* show dropdown menu and buttuon in small screen size */
+      }
+
+      header {
+        background-color: #F5F5F5;
+        /* padding: top right bottom left */
+      }
+
+      .dropdown-content {
+        max-width: 650px;
+        /* set the dropdown-content width same as the @media screen width */
+      }
+
+      a.logo {
+        width: 50px;
+        height: 50px;
+        padding-left: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="flex-container">
+      <!-- horizontal left -->
+      <nav id="navLeft">
+        <ul style="padding-left: 20px;">
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li>
+            <a href="#">Services</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- dropdown-menu -->
+      <nav id="navDropdown">
+        <div class="dropdown">
+          <button class="dropbtn"><span class="fa fa-bars fa-2x"></span></button>
+          <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Products</a>
+            <a href="#">Community</a>
+            <a href="#">Partnership</a>
+            <a href="#">About</a>
+          </div>
+        </div>
+      </nav>
+      <!-- center logo -->
+      <nav id="navLogo"><a class="logo" href="#"></a></nav>
+      <!-- horizontal right -->
+      <nav id="navRight">
+        <ul style="padding-left: 20px;">
+          <li>
+            <a href="#">Community</a>
+          </li>
+          <li>
+            <a href="#">Partnership</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </header>
+  <!-- Inline CSS -->
+  <section style="width: auto; height: 300px; background-color: aquamarine;"></section>
+</body>
+
+</html>
