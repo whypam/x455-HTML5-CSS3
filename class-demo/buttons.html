@@ -5,20 +5,22 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Button</title>
   <style>
+    /* button-1 -> display different portions of an image for mouse hover and mouse out states */
     .button-1 {
       border-radius: 10px;
       border: none;
       background: url(./assets/images/lemon-lime-01.jpg);
-      background-position: 30% top;
+      background-position: 30% top; /* display top portion when mouse out */
       width: 300px;
       height: 150px;
       color: white;
       font-size: 50px;
     }
     .button-1:hover {
-      background-position: 30% bottom;
+      background-position: 30% bottom; /* display bottom portion when mouse hover */
     }
 
+    /* button-2 -> display different images for mouse hover and mouse out states */
     .button-2 {
       width: 420px;
       height: 200px;
@@ -32,6 +34,7 @@
       background-repeat: no-repeat;
     }
 
+    /* button-3 -> display different color for mouse hover, mouse out and active states */
     #button-3 {
       border-radius: 10px;
       border: none;
@@ -53,7 +56,8 @@
 <body>
   <button class="button-1">Lemon</button>
   <div class="button-2"></div>
-  <button id="button-3">Hi There</button>
+  <!-- make use of javascript to change the text content for different states: mouseout, mouseover and click -->
+  <button id="button-3">Hi There</button> 
 
   <script>
     const btn = document.querySelector("#button-3");
