@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <style>
+    .button-1 {
+      border-radius: 10px;
+      border: none;
+      background: url(./assets/images/lemon-lime-01.jpg);
+      background-position: 30% top;
+      width: 300px;
+      height: 150px;
+      color: white;
+      font-size: 50px;
+    }
+    .button-1:hover {
+      background-position: 30% bottom;
+    }
+
+    .button-2 {
+      width: 420px;
+      height: 200px;
+      background: url("./assets/images/mixing-bowls-01.jpeg");
+      background-repeat: no-repeat;
+      border: 1px solid greenyellow;
+      margin-top: 20px;
+    }
+    .button-2:hover {
+      background: url("./assets/images/cutting-board-01.jpeg");
+      background-repeat: no-repeat;
+    }
+
+    #button-3 {
+      border-radius: 10px;
+      border: none;
+      background-color: rgb(119, 178, 220);
+      width: 300px;
+      height: 150px;
+      color: white;
+      font-size: 50px;
+      margin-top: 20px;
+    }
+    #button-3:hover {
+      background-color: rgb(30, 210, 30);
+    }
+    #button-3:active {
+      background-color: coral;
+    }
+  </style>
+</head>
+<body>
+  <button class="button-1">Lemon</button>
+  <div class="button-2"></div>
+  <button id="button-3">Hi There</button>
+
+  <script>
+    const btn = document.querySelector("#button-3");
+    btn.addEventListener("mouseout", function(e) {
+      btn.innerHTML = "Hi There!";
+    });
+    btn.addEventListener("mouseover", function(e) {
+      btn.innerHTML = "Goodbye";
+    });
+    btn.addEventListener("click", function(e) {
+      btn.innerHTML = "See You";
+    });
+  </script>
+</body>
+</html>
