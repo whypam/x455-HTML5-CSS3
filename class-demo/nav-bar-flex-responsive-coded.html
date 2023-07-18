@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <title>Nav bar flex</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      color: #777777;
+      font-size: 16px;
+      font-family: sans-serif;
+    }
+
+    .logo {
+      width: 50px;        /* by default, align to the left */
+      display: block;     /* center */
+      margin-left: auto;  /* center */
+      margin-right: auto; /* center */
+    }
+    
+    nav > div > ul {
+      list-style: none;
+    }
+
+    a {
+      color: #777777;
+      text-decoration: none;
+      display: inline-block;
+      padding: 20px 20px 5px 20px;
+      border-bottom: 1px solid #339999;
+    }
+
+    a:hover {
+      color: #ffffff;
+      cursor: grab;
+      background-color: #339999;
+    }
+
+    .flex-container {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 0;
+      margin: 0;
+    }
+
+    .dropdown {
+      position: absolute;
+      display: none;
+      /* hide dropdown menu and button in bigger screen size */
+      top: 0;
+      /* top right bottom left work with position:absolute, set an absolute position where to put the dropdown menu */
+      /*left: 0;*/
+      /* by default, always align to left */
+      right: 0;
+      /* if dropdown is set to right, dropdown-content should be set to right */
+    }
+
+    .dropbtn {
+      background-color: rgba(0, 102, 102, 0);
+      color: #777777;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      line-height: normal;
+    }
+
+    .dropbtn:hover {
+      color: #ffffff;
+    }
+
+    .dropdown-content {
+      display: none;
+      /* set display to none, so dropdown menu won't show till hover dropdown */
+      position: absolute;
+      right: 0;
+      /* if dropdown is set to right, dropdown-content should be set to right */
+      background-color: rgba(0, 102, 102, 0.8);
+      min-width: 280px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      /*z-index: 1;*/
+    }
+
+    .dropdown-content a {
+      color: #fff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      line-height: normal;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #339999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover {
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+
+    section>div.carousel-area {
+      width: 70%;
+      padding: 0px 40px 0px 40px;
+    }
+
+    section>div.carousel-area a:hover {
+      background-color: rgba(0, 102, 102, 0);
+    }
+
+    @media screen and (max-width: 500px) {
+      .logo {
+        width: 30px;
+      }
+
+      nav > div.horizontal-nav {
+        display: none;
+        /* hide the nav bar in small screen size */
+      }
+
+      nav {
+        /* padding: top right bottom left */
+        padding: 50px 0px 0px 0px;
+      }
+
+      .dropdown {
+        display: block; 
+        /* show dropdown menu and button in small screen size */
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Align ref: https://www.w3schools.com/css/css_align.asp -->
+  <img class="logo" src="./assets/images/dish-01.png" alt="dish logo"/>
+  <nav>
+    <!-- horizontal-menu -->
+    <div class="horizontal-nav">
+      <ul class="flex-container">
+        <li>
+          <a href="https://www.w3schools.com/">w3schools</a>
+        </li>
+        <li>
+          <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/">YouTube</a>
+        </li>
+        <li>
+          <a href="https://www.yahoo.com/">Yahoo</a>
+        </li>
+      </ul>
+    </div>
+    <!-- dropdown-menu -->
+    <div class="dropdown">
+      <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+      <div class="dropdown-content">
+        <a href="https://www.w3schools.com/">w3schools</a>
+        <a href="https://en.wikipedia.org/wiki/CSS">Wikipedia</a>
+        <a href="https://www.youtube.com/">YouTube</a>
+        <a href="https://www.yahoo.com/">Yahoo</a>
+      </div>
+    </div>
+  </nav>
+</body>
+</html>

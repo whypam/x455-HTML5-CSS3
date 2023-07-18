@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: lightgreen;
+}
+
+.box {
+    background-color: mediumpurple;
+    padding: 30px;
+}
+
+@media screen and (max-width: 600px) {
+    div.box {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    body {
+        background-color: pink;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media only screen and (orientation: landscape) {
+    body {
+        background-color: yellow;
+    }
+}
+
+</style>
+</head>
+<body>
+    <h1>Resize the browser window to see the color changes</h1>
+    <p>When the viewport is <b>800 pixels or wider</b>, the background-color is <b>lightblue</b>.
+       When the viewport is <b>between 600 and 799 pixels</b>, the background-color is <b>pink</b>,
+       When the viewport is <b>less than 599 or less pixels wide</b>, the background-color is <b>lightgreen</b>
+       However, if the viewport is <b>landscape orientation</b>, the background-color is <b>yellow</b>.
+    </p>
+    <div class="box">Do you see me?
+        <p>Answer: You will not see when you resize the browser to 600 pixles or less wide.</p>
+    </div>
+</body>
+</html>

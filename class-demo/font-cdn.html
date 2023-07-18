@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fonts CDN</title>
+  <!-- Select fonts from https://fonts.google.com/ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+
+  <!-- 
+    1. go to https://cdnjs.com/libraries
+    2. search for "material design iconic font"
+    3. copy the link and paste it to <link> tag
+    4. to learn about how to use the CDN, click the GitHub link the screen - 
+        https://github.com/zavoloklom/material-design-iconic-font?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library
+   -->
+  <!-- The integrity attribute allows a browser to check the fetched script to ensure that the code is never loaded if the source has been manipulated. -->
+  <!-- The browser downloads the file, then checks it, to make sure that it is a match with the hash in the integrity attribute. If it matches, the file is used, and if not, the file is blocked. -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    integrity="sha512-rRQtF4V2wtAvXsou4iUAs2kXHi3Lj9NE7xJR77DE7GHsxgY9RTWy93dzMXgDIG8ToiRTD45VsDNdTiUagOFeZA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    body {
+      font-family: 'Raleway', sans-serif;
+      /* Raleway is a google font */
+      font-size: 30px;
+    }
+
+    .light-font {
+      font-weight: 300;
+    }
+
+    .italic-font {
+      font-style: italic;
+    }
+
+    .bold-font {
+      font-weight: 700;
+    }
+
+    .purple-flower {
+      /* The !important rule in CSS is used to add more importance to a property/value than normal.
+           In fact, if you use the !important rule, it will override ALL previous styling rules for that specific property on that element.
+           Reference: https://www.w3schools.com/css/css_important.asp
+      */
+      color: purple !important;
+    }
+
+    .youtube-icon {
+      font-size: 64px;
+      color: red !important;
+    }
+  </style>
+</head>
+
+<body>
+  <p>Custom font</p>
+  <p class="light-font">Light font</p>
+  <p class="italic-font">Italic font</p>
+  <p class="bold-font">Bold font</p>
+
+  <span class="zmdi zmdi-flower-alt"></span>
+
+  <p><span class="zmdi zmdi-flower-alt zmdi-hc-lg"></span> zmdi-hc-lg</p>
+  <p><span class="zmdi zmdi-flower-alt zmdi-hc-2x"></span> zmdi-hc-2x</p>
+  <p><span class="zmdi zmdi-flower-alt zmdi-hc-3x"></span> zmdi-hc-3x</p>
+  <p><span class="zmdi zmdi-flower-alt zmdi-hc-4x"></span> zmdi-hc-4x</p>
+  <p><span class="zmdi zmdi-flower-alt zmdi-hc-5x zmdi-hc-spin purple-flower"></span> zmdi-hc-5x</p>
+
+  <button class="btn btn-default btn-lg"><span class="zmdi zmdi-rotate-right zmdi-hc-spin"></span></button>
+
+  <span class="zmdi zmdi-youtube-play youtube-icon"></span>
+</body>
+
+</html>
