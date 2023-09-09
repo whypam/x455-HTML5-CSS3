@@ -4,7 +4,7 @@
 
 # Web Design With HTML5 and CSS3 DESIGN X455
 
-[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Summer-2023/index.html)
+[Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-Fall-2023/index.html)
 
 ## Quick Links
 
@@ -131,13 +131,13 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 
 A sample website that is composed of 6 pages with all the required components explained above.
 
-[https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Spring-2023/index.html)
+[https://whypam.github.io/x455-Proj-Demo-Fall-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Fall-2023/index.html)
 
 ## Class demo
 
 Coding demo that is done in each lecture will be uploaded to this GitHub repository. You are recommended to clone/make a copy on your computer for reference.
 
-[https://github.com/whypam/x455-HTML5-CSS3-Spring-2023](https://github.com/whypam/x455-HTML5-CSS3-Spring-2023)
+[https://github.com/whypam/x455-HTML5-CSS3-Fall-2023](https://github.com/whypam/x455-HTML5-CSS3-Fall-2023)
 
 ## Other Links
 
