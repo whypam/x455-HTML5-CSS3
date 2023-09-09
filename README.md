@@ -118,10 +118,6 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 
 **20% of the course grading**
 
-| Home Page | 2nd Page | 3rd Page | 4th Page | 5th Page | 6th Page | Summary, Presentation & Review |
-| --------- | -------- | -------- | -------- | -------- | -------- | ------------------------------ |
-| 1         | 3        | 2        | 3        | 2        | 2        | 7                              |
-
 ## Equipment, Tools and Resources Required to Complete the Final Project
 
 1. Apple or PC computer (8 to 16GB RAM).
