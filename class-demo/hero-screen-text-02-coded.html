@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hero Screen - Muffins & Text</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      .hero-image {
+        height: 100%;
+        width: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: bottom; /* remove whitespace below image */
+      }
+
+      h1 {
+        color: #8b3a04;
+        font-size: 64px;
+        font-weight: bold;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+      }
+
+      .hero-text {
+        position: absolute;
+        top: 15%;
+        left: 30%;
+      }
+
+      .footer-content {
+        width: 100%;
+        padding: 30px 0;
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        background-color: #8b3a04;
+      }
+
+      .hero-button {
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        border-radius: 10px;
+        border: none;
+        background-color: #8b3a04;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+        cursor: pointer;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <section class="container">
+      <img class="hero-image" src="./assets/images/muffins.jpg" />
+      <div class="hero-text">
+        <h1>Sorted Muffins...</h1>
+      </div>
+      <a href="https://google.com" target="_blank"><button class="hero-button">More Muffins</button></a>
+    </section>
+    <footer class="footer-content">I'm a footer</footer>
+  </body>
+</html>
