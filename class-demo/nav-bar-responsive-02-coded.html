@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Nav Bar Responsive</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    
+    .horizontal-nav {
+      transition: all 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 0px 0px 0px 180px;
+    }
+
+    .horizontal-nav a {
+      transition: all 0.5s ease;
+      display: inline-block;
+      color: #ffffff;
+      margin: 25px 0px;
+      padding: 10px 20px;
+      text-decoration: none;
+    }
+
+    .horizontal-nav a:hover {
+      transition: all 0.5s ease;
+      cursor: grab;
+      background-color: #777777;
+    }
+
+    /*
+      contain - The image keeps its aspect ratio, but is resized to fit within the given dimension
+      cover - The image keeps its aspect ratio and fills the given dimension. The image will be clipped to fit
+    */
+
+    header.food-page {
+      transition: all 0.5s ease;
+      background: #eee url(./assets/images/food-02.jpg) no-repeat center; 
+      background-size: cover;
+      height: 450px;
+    }
+
+    header a.logo {
+      transition: all 0.5s ease;
+      position: absolute; 
+      display: block;
+      width: 70px;
+      height: 70px;
+      background: url(./assets/images/dish-01.png) no-repeat 0 0; 
+      background-size: contain;
+      top: 10px;
+      left: 20px;
+    }
+
+    header a.logo:hover {
+      transition: all 0.5s ease;
+      opacity: 0.8;
+    }
+    
+    .dropdown {
+      transition: all 0.5s ease;
+      position: absolute;
+      display: none;  
+      top: 0; 
+      right: 0; 
+    }
+
+    .dropbtn {
+      transition: all 0.5s ease;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      transition: all 0.5s ease;
+      display: none;
+      position: absolute;
+      right: 0; 
+      background-color: rgba(0, 102, 102, 0.8);
+    }
+
+    .dropdown-content a {
+      transition: all 0.5s ease;
+      color: #ffffff;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+    }
+
+    .dropdown-content a:hover {
+      transition: all 0.5s ease;
+      background-color: #339999;
+    }
+
+    .dropdown:hover .dropdown-content {
+      transition: all 0.5s ease;
+      display: block;
+    }
+
+    .dropdown:hover {
+      transition: all 0.5s ease;
+      background-color: rgba(0, 102, 102);
+    }
+
+    .active-menu-item {
+      transition: all 0.5s ease;
+      border-bottom: 2px solid #339999;
+    }
+
+    @media screen and (max-width: 750px) {
+      header.food-page {
+        background: #eee url(./assets/images/food-02.jpg) no-repeat center; 
+        background-size: cover;
+        height: 270px;
+      }
+
+      header a.logo {
+        width: 40px;
+      }
+
+      .horizontal-nav {
+        padding: 0 0 0 60px;
+      }
+
+      .horizontal-nav a {
+        margin: 10px 0px;
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .horizontal-nav {
+        display: none; 
+      }
+
+      header.food-page {
+        background: #eee url(./assets/images/food-02.jpg) no-repeat center; 
+        background-size: cover;
+        height: 100px;
+      }
+
+      header a.logo {
+        position: absolute;
+        background: url(./assets/images/dish-01.png) no-repeat 0 0;
+        background-size: contain;
+        top: 5px;
+        left: 10px;
+      }
+
+      .dropdown {
+        transition: all 0.5s ease;
+        display: block; 
+      }
+
+      .dropdown-content {
+        min-width: 500px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="food-page">
+    <a class="logo" href="nav-bar-link-pages-home.html"></a>
+    <nav>
+      <div class="horizontal-nav">
+        <a href="hero-screen-text-02-coded.html">Splash</a>
+        <a class="active-menu-item" href="#">Food</a> 
+        <a href="">Seasoning</a>
+        <a href="">Utensil</a>
+        <a href="">Cuttery</a>
+        <a href="">Chef</a>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn"><span class="fa fa-bars fa-x"></span></button>
+        <div class="dropdown-content">
+          <a href="hero-screen-text-02-coded.html">Splash</a>
+          <a class="active-menu-item" href="#">Food</a>
+          <a href="">Seasoning</a>
+          <a href="">Utensil</a>
+          <a href="">Cuttery</a>
+          <a href="">Chef</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <section>Start adding page content here......</section>
+</body>
+
+</html>
