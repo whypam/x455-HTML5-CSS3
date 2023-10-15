@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery Carousel</title>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+
+  <style>
+    .container {
+      width: 70%;
+      padding: 30px;
+      float: left;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: green;
+    }
+
+    .image-responsive {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .slick-slide {
+      padding: 0 5px;
+    }
+
+    .your-class div p {
+      margin: 5px 0;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>jQuery Carousel</h1>
+
+  <div class="container">
+    <div class="your-class">
+      <div>
+        <img class="image-responsive" src="./assets/images/chili-02.jpg" />
+      </div>
+      <div>
+        <img class="image-responsive" src="./assets/images/cinnamon-01.jpg" />
+      </div>
+      <div>
+        <img class="image-responsive" src="./assets/images/garlic-01.jpg" />
+      </div>
+      <div>
+        <img class="image-responsive" src="./assets/images/ginger-01.jpg" />
+      </div>
+      <div>
+        <img class="image-responsive" src="./assets/images/herb-01.jpg" />
+      </div>
+      <div>
+        <img class="image-responsive" src="./assets/images/lemon-lime-01.jpg" />
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.your-class').slick({
+        dots: true,
+        slidesToShow: 3,
+        slidesToScroll: 2,
+      });
+    });
+  </script>
+</body>
+
+</html>
