@@ -138,7 +138,7 @@ A sample website that is composed of 6 pages with all the required components ex
 
 Coding demo that is done in each lecture will be uploaded to this GitHub repository. You are recommended to clone/make a copy on your computer for reference.
 
-[x455 HTML5 CSS3 Fall](https://github.com/whypam/x455-HTML5-CSS3-Fall-2023)
+[x455 HTML5 CSS3](https://github.com/whypam/x455-HTML5-CSS3-Fall-2023)
 
 ## Other Links
 
