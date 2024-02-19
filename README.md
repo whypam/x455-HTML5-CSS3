@@ -58,10 +58,10 @@ In this course, you will develop a capstone project that is a website with six (
    - Images must have lightbox effect
 
 7. Each page should include:
-   a. A logo AND
-   b.	A navigation menu that links up all six (6) pages AND
-   c.	A footer that contains social media links, contact information, copyright verbiage AND
-   d.	A search icon and/or a shopping cart icon (for presentation only, non-functional)
+   - A logo AND
+   - A navigation menu that links up all six (6) pages AND
+   - A footer that contains social media links, contact information, copyright verbiage AND
+   - A search icon and/or a shopping cart icon (for presentation only, non-functional)
 
 ## Process
 
