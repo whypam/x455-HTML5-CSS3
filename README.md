@@ -105,7 +105,7 @@ To complete the final project, you will go through multiple development stages.
 
 ## Peer Review
 
-Peer reviews on prototyping and coding each page are built in the lecture time. Participation is required.
+Peer reviews on wireframes, design mockups and coding each page are built in the lecture time. Participation is required.
 
 ## Written Summary
 
@@ -114,10 +114,6 @@ You are required to write a summary for your final project. Details will be prov
 ## Presentation & Peer Review
 
 Final project presentation and peer review will be conducted in Week 10 (Lecture 10). Participation is required. Details will be provided in the course.
-
-## Final Project Grading
-
-**20% of the course grading**
 
 ## Equipment, Tools and Resources Required to Complete the Final Project
 
