@@ -103,7 +103,7 @@ To complete the final project, you will go through multiple development stages.
 
 5. **Website deployment**. GitHub online account and GitHub Desktop will be utilized for your website deployment. Instructions on creating a GitHub account, installing GitHub Desktop and other GitHub related tasks will be provided throughout the course.
 
-## Peer Review
+## Progress Peer Review
 
 Peer reviews on wireframes, design mockups and coding each page are built in the lecture time. Participation is required.
 
@@ -111,7 +111,7 @@ Peer reviews on wireframes, design mockups and coding each page are built in the
 
 You are required to write a summary for your final project. Details will be provided in the course.
 
-## Presentation & Peer Review
+## Final Project Presentation & Peer Review
 
 Final project presentation and peer review will be conducted in Week 10 (Lecture 10). Participation is required. Details will be provided in the course.
 
