@@ -8,6 +8,7 @@
 
 - [Course Details](https://extension.berkeley.edu/search/publicCourseSearchDetails.do?method=load&courseId=11188390#courseSectionDetails_58168140)
 - [Course Work](#Objective)
+- [Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-02/index.html)
 
 ---
 
