@@ -30,33 +30,40 @@ In this course, you will develop a capstone project that is a website with six (
 
 1. **Homepage**:
 
-   - Fullscreen background image
-   - HTML5 fullscreen video (Bonus)
+   - Fullscreen background image OR
+   - Fullscreen video
 
 2. **2nd Page**:
 
-   - Two (2) large paragraphs of text
-   - Two (2) list items
+   - Two (2) large paragraphs of text AND
+   - Two (2) images embedded into text block AND
+   - Two (2) hyperlinks to external websites
 
 3. **3rd Page**:
 
-   - Three (3) slides of carousel
+   - Three (3) slides of carousel AND
    - One (1) scrollable text area
 
 4. **4th Page**:
 
-   - HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size
-   - Ten (10) table entries
+   - HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size AND
+   - Ten (4) table entries AND
    - Sortable table by headers
 
 5. **5th Page**:
 
-   - Three (3) embedded YouTube videos
+   - Three (3) embedded YouTube videos AND
    - Two (2) accordion text paragraphs
 
 6. **6th Page**:
-   - Eight (8) thumbnail images
+   - Eight (6) thumbnail images AND
    - Images must have lightbox effect
+
+7. Each page should include:
+   a. A logo AND
+   b.	A navigation menu that links up all six (6) pages AND
+   c.	A footer that contains social media links, contact information, copyright verbiage AND
+   d.	A search icon and/or a shopping cart icon (for presentation only, non-functional)
 
 ## Process
 
@@ -93,14 +100,10 @@ To complete the final project, you will go through multiple development stages.
 3. **Design**. Design is a mockup of your final project. Mockup is where your project will begin to take shape. When wireframing is meant to quickly come up with a concept, mockup is where things take life.
 
    You will add colors and content to your mockup. In this stage, you may not have all the images, videos and text content ready. So you can reuse the same images in multiple places as placeholders. For text content, you may use Lorem Ipsum dummy text [https://www.lipsum.com/](https://www.lipsum.com/).
+   
+4. **Coding**. You will code your website (6 pages) in HTML5 and CSS3 (make use of JavaScript and JQuery) in Visual Studio Code, then test/run it on Google Chrome browser. In this stage, you should have all images, videos and text content needed for your website.
 
-4. **Prototyping**. Make use of design software (e.g., Figma, Adobe XDesign, InVision) to build simulation of your website. That means the prototype will behave the same or similar to your actual website.
-
-   You can choose any software to build the prototype, just make sure the software has an option to create a public share link, because you will need to submit the public share link to Canvas.
-
-5. **Coding**. You will code your website (6 pages) in HTML5 and CSS3 (make use of JavaScript and JQuery) in Visual Studio Code, then test/run it on Google Chrome browser. In this stage, you should have all images, videos and text content needed for your website.
-
-6. **Website deployment**. GitHub online account and GitHub Desktop will be utilized for your website deployment. Instructions on creating a GitHub account, installing GitHub Desktop and other GitHub related tasks will be provided throughout the course.
+5. **Website deployment**. GitHub online account and GitHub Desktop will be utilized for your website deployment. Instructions on creating a GitHub account, installing GitHub Desktop and other GitHub related tasks will be provided throughout the course.
 
 ## Peer Review
 
@@ -125,13 +128,13 @@ Final project presentation and peer review will be conducted in Week 10 (Lecture
 3. Install GitHub Desktop on your computer.
 4. Sign up for a GitHub Online account.
 5. Install Google Chrome browser.
-6. Your choice to pick a design software for wireframing, design/mockup and prototyping (e.g. Figma, Adobe XD, Illustrator, Photoshop and InVision, etc..)
+6. Your choice to pick a design software for wireframing and design/mockup (e.g. Figma, Adobe XD, Illustrator, Photoshop and InVision, etc..)
 
 ## Final Project Demo/Sample
 
 A sample website that is composed of 6 pages with all the required components explained above.
 
-[https://whypam.github.io/x455-Proj-Demo-Fall-2023/index.html](https://whypam.github.io/x455-Proj-Demo-Fall-2023/index.html)
+[https://whypam.github.io/x455-Proj-Demo-02/index.html](https://whypam.github.io/x455-Proj-Demo-02/index.html)
 
 ## Class demo
 
@@ -172,9 +175,8 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
   - (10%) Wireframes 2
   - (10%) Design Mockup 1
   - (10%) Design Mockup 2
-  - (10%) Prototype
-  - (5%) Coding Assignment 1
-  - (5%) Coding Assignment 2
+  - (10%) Coding Assignment 1
+  - (10%) Coding Assignment 2
 - (15%) Class Participation and Peer Review
 
 - (20%) Final Project, including written summary, Presentation and Peer Review
