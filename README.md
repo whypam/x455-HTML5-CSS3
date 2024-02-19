@@ -10,8 +10,6 @@
 - [Course Work](#Objective)
 - [Capstone Project Demo Site](https://whypam.github.io/x455-Proj-Demo-02/index.html)
 
----
-
 ## Objective
 
 In this course, you will develop a capstone project that is a website with six (6) pages. Each page is designed for you to practice coding webpage components that you learn from the course.
@@ -97,7 +95,7 @@ To complete the final project, you will go through multiple development stages.
 
 3. **Design**. Design is a mockup of your final project. Mockup is where your project will begin to take shape. When wireframing is meant to quickly come up with a concept, mockup is where things take life.
 
-   You will add colors and content to your mockup. In this stage, you may not have all the images, videos and text content ready. So you can reuse the same images in multiple places as placeholders. For text content, you may use Lorem Ipsum dummy text [https://www.lipsum.com/](https://www.lipsum.com/).
+   You will add colors and content to your mockup. In this stage, you may not have all the images, videos and text content ready. So you can reuse the same images, videos and text content in multiple places as placeholders.
    
 4. **Coding**. You will code your website (6 pages) in HTML5 and CSS3 (make use of JavaScript and JQuery) in Visual Studio Code, then test/run it on Google Chrome browser. In this stage, you should have all images, videos and text content needed for your website.
 
@@ -134,27 +132,27 @@ A sample website that is composed of 6 pages with all the required components ex
 
 Coding demo that is done in each lecture will be uploaded to this GitHub repository. You are recommended to clone/make a copy on your computer for reference.
 
-[x455 HTML5 CSS3](https://github.com/whypam/x455-HTML5-CSS3-Fall-2023)
+[x455 HTML5 CSS3](https://github.com/whypam/x455-HTML5-CSS3-Spring-2024)
 
 ## Other Links
 
-#### Visual Studio Code:
+#### Visual Studio Code (required):
 
 - Download [https://code.visualstudio.com/download](https://code.visualstudio.com/download)
 - Setup [https://youtu.be/4NfFFsQC77M](https://youtu.be/4NfFFsQC77M)
 - Get started [https://code.visualstudio.com/docs/introvideos/basics](https://code.visualstudio.com/docs/introvideos/basics)
 
-#### GitHub:
+#### GitHub (required):
 
 - GitHub Desktop download [https://desktop.github.com/](https://desktop.github.com/)
 - GitHub Online Account sign up [https://github.com/signup](https://github.com/signup)
 
-#### Google Chrome
+#### Google Chrome (required):
 
 - Download [https://www.google.com/chrome/](https://www.google.com/chrome/)
 - Set up default browser [https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1](https://support.google.com/chrome/answer/95417?co=GENIE.Platform%3DDesktop&hl=en&oco=1)
 
-#### Figma
+#### Figma (optional):
 
 - Sign up [https://www.figma.com/](https://www.figma.com/)
 - Introduction – Figma for UX/UI Design tutorial [https://youtu.be/keoL0B7NaEs](https://youtu.be/keoL0B7NaEs)
