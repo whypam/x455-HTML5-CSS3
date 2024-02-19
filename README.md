@@ -45,7 +45,7 @@ In this course, you will develop a capstone project that is a website with six (
 4. **4th Page**:
 
    - HTML table with four (4) header and four (4) columns, e.g., Utensil, Type, Name and Size AND
-   - Ten (4) table entries AND
+   - Four (4) table entries AND
    - Sortable table by headers
 
 5. **5th Page**:
@@ -54,7 +54,7 @@ In this course, you will develop a capstone project that is a website with six (
    - Two (2) accordion text paragraphs
 
 6. **6th Page**:
-   - Eight (6) thumbnail images AND
+   - Six (6) thumbnail images AND
    - Images must have lightbox effect
 
 7. **Each page should include**:
