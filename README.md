@@ -57,7 +57,7 @@ In this course, you will develop a capstone project that is a website with six (
    - Eight (6) thumbnail images AND
    - Images must have lightbox effect
 
-7. Each page should include:
+7. **Each page should include**:
    - A logo AND
    - A navigation menu that links up all six (6) pages AND
    - A footer that contains social media links, contact information, copyright verbiage AND
