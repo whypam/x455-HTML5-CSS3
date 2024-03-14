@@ -1,0 +1,98 @@
+.new-h1 {
+  margin: 0px 0px 16px 0px;
+  color: #076d6f;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.new-h2 {
+  text-decoration: underline;
+  letter-spacing: 5px;
+  color: forestgreen;
+  font-size: 40px;
+}
+
+.new-h3 {
+  margin: 0px 0px 24px 0px;
+  color: #339999;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.new-h4 {
+  text-align: center;
+  font-size: 24px;
+  font-style: italic;
+  color: lightslategrey;
+}
+
+.new-h5 {
+  text-align: right;
+  font-size: 48px;
+  color: mediumslateblue;
+}
+
+.new-h6 {
+  text-decoration: overline;
+  font-size: 32px;
+  color: darksalmon;
+  text-transform: lowercase;
+}
+
+.new-p {
+  text-align: justify;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: indigo;
+  letter-spacing: 2px;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.new-mark {
+  background-color: cornflowerblue;
+}
+
+.line-through-text {
+  text-decoration: line-through;
+  color: darkgreen;
+}
+
+.small-header-word {
+  font-size: 30px;
+  vertical-align: super;
+  letter-spacing: 0px;
+}
+
+.headline {
+  width: 100%;
+  height: auto;
+  background-color: rgb(0, 51, 102); /* red, green and blue */
+  text-align: center;
+  color: white;
+  font-family: monospace, monospace;
+  font-size: 130px;
+  letter-spacing: 5px;
+  padding-bottom: 50px;
+}
+
+.hr2 {
+  border: 0;
+  border-top: 3px solid red;
+}
+
+.quote-container {
+  width: 630px;
+  padding: 10px;
+}
+.quote {
+  font-family: cursive, fantasy;
+  font-size: 28px;
+  letter-spacing: 3px;
+}
+
+.text-align-right {
+  text-align: right;
+}
