@@ -40,3 +40,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+button.w3-button:hover {
+  color: #795548 !important;
+  background-color: #ffeb3b !important;
+}
+
+a.w3-button:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}

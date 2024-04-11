@@ -4,6 +4,15 @@
     <title>W3.CSS Template</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
+    <script
+      type="text/JavaScript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/JavaScript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
+    ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -42,8 +51,49 @@
           <a href="#cuttery" class="w3-bar-item w3-button">Cuttery</a>
           <a href="#chef" class="w3-bar-item w3-button">Chef</a>
         </div>
+
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </div>
+
+    <!-- Sidebar on small screens when clicking the menu icon -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-left w3-hide-medium w3-hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Video</a
+      >
+      <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Food</a
+      >
+      <a href="#seasoning" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Seasoning</a
+      >
+      <a href="#utensil" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Utensil</a
+      >
+      <a href="#cuttery" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Cuttery</a
+      >
+      <a href="#chef" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Chef</a
+      >
+    </nav>
 
     <!-- Header -->
     <header
@@ -271,7 +321,7 @@
         <div class="w3-row">
           <div class="w3-col s8 w3-center">
             <iframe
-              style="width: 100%; height: 300px;"
+              style="width: 100%; height: 300px"
               src="https://www.youtube.com/embed/G-Fg7l7G1zw"
               title="Basic Knife Skills"
               frameborder="0"
@@ -280,11 +330,11 @@
             </iframe>
           </div>
           <div class="w3-col s4 w3-center">
-            <iframe 
-              style="width: 100%; height: 300px;"
-              src="https://www.youtube.com/embed/G-Fg7l7G1zw?si=8KxUf273zHw9XyBO" 
-              title="Basic Knife Skills" 
-              frameborder="0" 
+            <iframe
+              style="width: 100%; height: 300px"
+              src="https://www.youtube.com/embed/G-Fg7l7G1zw?si=8KxUf273zHw9XyBO"
+              title="Basic Knife Skills"
+              frameborder="0"
               allow="autoplay; encrypted-media"
             ></iframe>
           </div>
@@ -292,7 +342,7 @@
         <div class="w3-row">
           <div class="w3-col s4 w3-center">
             <iframe
-              style="width: 100%; height: 300px;"
+              style="width: 100%; height: 300px"
               src="https://www.youtube.com/embed/G-Fg7l7G1zw"
               title="Basic Knife Skills"
               frameborder="0"
@@ -301,76 +351,93 @@
             </iframe>
           </div>
           <div class="w3-col s8 w3-center">
-            <iframe 
-              style="width: 100%; height: 300px;"
-              src="https://www.youtube.com/embed/G-Fg7l7G1zw?si=8KxUf273zHw9XyBO" 
-              title="Basic Knife Skills" 
-              frameborder="0" 
+            <iframe
+              style="width: 100%; height: 300px"
+              src="https://www.youtube.com/embed/G-Fg7l7G1zw?si=8KxUf273zHw9XyBO"
+              title="Basic Knife Skills"
+              frameborder="0"
               allow="autoplay; encrypted-media"
             ></iframe>
           </div>
         </div>
       </div>
-        
-        <h1>Contact</h1>
-        <br />
-        <p>
-          We offer full-service catering for any event, large or small. We
-          understand your needs and we will cater the food to satisfy the
-          biggerst criteria of them all, both look and taste. Do not hesitate to
-          contact us.
-        </p>
-        <p class="w3-text-blue-grey w3-large">
-          <b>Catering Service, 42nd Living St, 43043 New York, NY</b>
-        </p>
-        <p>
-          You can also contact us by phone 00553123-2323 or email
-          catering@catering.com, or you can send us a message here:
-        </p>
-        <form action="/action_page.php" target="_blank">
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Name"
-              required
-              name="Name"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="number"
-              placeholder="How many people"
-              required
-              name="People"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="datetime-local"
-              placeholder="Date and time"
-              required
-              name="date"
-              value="2020-11-16T20:00"
-            />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16"
-              type="text"
-              placeholder="Message \ Special requirements"
-              required
-              name="Message"
-            />
-          </p>
-          <p>
-            <button class="w3-button w3-light-grey w3-section" type="submit">
-              SEND MESSAGE
-            </button>
-          </p>
-        </form>
+      <div id="utensil" class="w3-container w3-padding-top-64">
+        <h1 class="w3-center">Cuttery</h1>
+        <table id="myTable" class="w3-table-all">
+          <thead>
+            <tr class="w3-brown">
+              <th>Utensil</th>
+              <th>Type</th>
+              <th>Name</th>
+              <th>Size</th>
+            </tr>
+          </thead>
+          <tr class="w3-hover-sand">
+            <td><img src="./img/skillet-03.jpeg" style="width: 120px" /></td>
+            <td>Cookware</td>
+            <td>Skillet</td>
+            <td>Medium</td>
+          </tr>
+          <tr class="w3-hover-sand">
+            <td>
+              <img src="./img/wooden-spoons-01.jpeg" style="width: 120px" />
+            </td>
+            <td>Hand Tool</td>
+            <td>Wooden Spoon</td>
+            <td>Small</td>
+          </tr>
+          <tr class="w3-hover-sand">
+            <td><img src="./img/reamer-01.jpeg" style="width: 120px" /></td>
+            <td>Hand Tool</td>
+            <td>Citrus Reamer</td>
+            <td>Small</td>
+          </tr>
+          <tr class="w3-hover-sand">
+            <td>
+              <img src="./img/stand-mixer-01.jpeg" style="width: 120px" />
+            </td>
+            <td>Electronic Appliance</td>
+            <td>Stand Mixer</td>
+            <td>Big</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="w3-row">
+        <div class="w3-col s6 w3-left">
+          <button
+            class="w3-button w3-block w3-brown"
+            onclick="myAccordion('accordion1')"
+          >
+            <h4>Cuttery Tip 1</h4>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="accordion1" class="w3-hide w3-container">
+            <p>
+              Vegetables are parts of plants that are consumed by humans or
+              other animals as food. The original meaning is still commonly used
+              and is applied to plants collectively to refer to all edible plant
+              matter.
+            </p>
+          </div>
+        </div>
+        <div class="w3-col s6 w3-left" style="padding-left: 5px">
+          <button
+            class="w3-button w3-block w3-brown"
+            onclick="myAccordion('accordion2')"
+          >
+            <h4>Cuttery Tip 1</h4>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div id="accordion2" class="w3-hide w3-container">
+            <p>
+              Vegetables are parts of plants that are consumed by humans or
+              other animals as food. The original meaning is still commonly used
+              and is applied to plants collectively to refer to all edible plant
+              matter.
+            </p>
+          </div>
+        </div>
       </div>
 
       <!-- End page content -->
@@ -430,6 +497,48 @@
         }
         x[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+    </script>
+
+    <script>
+      // sortable table
+      $(document).ready(function () {
+        $("table#myTable").tablesorter({
+          sortList: [[2, 0]], // first index - column. second index - 0 for asc; 1 for desc
+          CssAsc: "tablesorter-headerAsc",
+          CssDesc: "tablesorter-headerDesc",
+        });
+      });
+    </script>
+
+    <script>
+      function myAccordion(id) {
+        var x = document.getElementById(id);
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-brown", "w3-yellow");
+        } else {
+          x.className = x.className.replace(" w3-show", "");
+          x.previousElementSibling.className =
+            x.previousElementSibling.className.replace("w3-yellow", "w3-brown");
+        }
       }
     </script>
   </body>
