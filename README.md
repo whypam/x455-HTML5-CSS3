@@ -169,6 +169,6 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
   - (10%) Design Mockup 2
   - (10%) Coding Assignment 1
   - (10%) Coding Assignment 2
-- (15%) Class Participation and Peer Review
+- (10%) Class Participation and Peer Review
 
-- (20%) Final Project, including written summary, Presentation and Peer Review
+- (25%) Final Project, including written summary, Presentation and Peer Review
