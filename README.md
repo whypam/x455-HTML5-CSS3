@@ -172,3 +172,6 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
 - (10%) Class Participation and Peer Review
 
 - (25%) Final Project, including written summary, Presentation and Peer Review
+
+In order to pass the class, students must complete the final project, written summary, presentation and peer review.  The final project is graded on content arrangement, alignment, spacing, color coordination, functional requirements and useability.
+
