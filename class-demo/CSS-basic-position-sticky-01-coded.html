@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>CSS Sticky Position</title>
+    <style>
+      /* Internal CSS */
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .sticky-box {
+        width: 80px;
+        height: 200px;
+        background-color: darksalmon;
+        text-align: center;
+        position: sticky;
+        top: 0; /* sticky to the top page */
+        bottom: 0; /* sticky to the bottom page */
+        float: left; /* make the sticky-box an inline element and stay on the left*/
+      }
+
+      .fixed-box {
+        width: 80px;
+        height: 200px;
+        background-color: darksalmon;
+        text-align: center;
+        position: fixed;
+        bottom: 150px; /* sticky to the top page */
+        left: 0; /* use left and right to fix the box to left or right */
+      }
+
+      .icon {
+        padding: 20px;
+        color: cornflowerblue;
+      }
+
+      .spacing {
+        padding: 0 100px 10px 100px; /* top left bottom right */
+      }
+
+      /*
+    p {
+      padding: 0 100px 10px 100px;  
+    }
+    */
+    </style>
+  </head>
+
+  <body>
+    <div style="width: 100%; height: 100%">
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Id corrupti dolorum et quia impedit non
+        nobis tempora qui beatae voluptas aut rerum libero ut fugit omnis est
+        fuga internos. 33 voluptatem internos 33 optio voluptas et consectetur
+        sapiente quo earum dolorem ut esse ipsum est voluptas dolor qui saepe
+        delectus. Vel ipsa aliquam et exercitationem dolores 33 galisum minus
+        eum tenetur sequi? Aut libero blanditiis non aspernatur numquam aut Quis
+        beatae aut galisum aliquam quo ullam quisquam. Id corrupti dolorum et
+        quia impedit non nobis tempora qui beatae voluptas aut rerum libero ut
+        fugit omnis est fuga internos. 33 voluptatem internos 33 optio voluptas
+        et consectetur sapiente quo earum dolorem ut esse ipsum est voluptas
+        dolor qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam. Id
+        corrupti dolorum et quia impedit non nobis tempora qui beatae voluptas
+        aut rerum libero ut fugit omnis est fuga internos. 33 voluptatem
+        internos 33 optio voluptas et consectetur sapiente quo earum dolorem ut
+        esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa aliquam et
+        exercitationem dolores 33 galisum minus eum tenetur sequi? Aut libero
+        blanditiis non aspernatur numquam aut Quis beatae aut galisum aliquam
+        quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Et animi natus et voluptas
+        autem ut magnam molestias ut neque quibusdam. At fugit nobis et
+        asperiores itaque ad mollitia sunt. Et quidem tempora est numquam dolor
+        et doloremque cumque. At distinctio maxime hic quos itaque et sapiente
+        quia est nemo deserunt. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam. Id
+        corrupti dolorum et quia impedit non nobis tempora qui beatae voluptas
+        aut rerum libero ut fugit omnis est fuga internos. 33 voluptatem
+        internos 33 optio voluptas et consectetur sapiente quo earum dolorem ut
+        esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa aliquam et
+        exercitationem dolores 33 galisum minus eum tenetur sequi? Aut libero
+        blanditiis non aspernatur numquam aut Quis beatae aut galisum aliquam
+        quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Et animi natus et voluptas
+        autem ut magnam molestias ut neque quibusdam. At fugit nobis et
+        asperiores itaque ad mollitia sunt. Et quidem tempora est numquam dolor
+        et doloremque cumque. At distinctio maxime hic quos itaque et sapiente
+        quia est nemo deserunt. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Et animi natus et voluptas
+        autem ut magnam molestias ut neque quibusdam. At fugit nobis et
+        asperiores itaque ad mollitia sunt. Et quidem tempora est numquam dolor
+        et doloremque cumque. At distinctio maxime hic quos itaque et sapiente
+        quia est nemo deserunt. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+    </div>
+    <!-- type html/css code here -->
+    <div class="sticky-box">
+      <!-- Pinterest -->
+      <a
+        href="https://www.pinterest.com/"
+        target="_blank"
+        class="fa fa-pinterest fa-lg fa-2x icon"
+      ></a>
+      <!-- Linkedin -->
+      <a
+        href="https://www.linkedin.com/"
+        target="_blank"
+        class="fa fa-linkedin fa-lg fa-2x icon"
+      ></a>
+      <!-- GitHub -->
+      <a
+        href="https://www.github.com/"
+        target="_blank"
+        class="fa fa-github-alt fa-lg fa-2x icon"
+      ></a>
+    </div>
+    <div style="width: 100%; height: 100%">
+      <p style="padding: 0 100px 10px 100px">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Id corrupti dolorum et quia impedit non nobis tempora qui beatae
+        voluptas aut rerum libero ut fugit omnis est fuga internos. 33
+        voluptatem internos 33 optio voluptas et consectetur sapiente quo earum
+        dolorem ut esse ipsum est voluptas dolor qui saepe delectus. Vel ipsa
+        aliquam et exercitationem dolores 33 galisum minus eum tenetur sequi?
+        Aut libero blanditiis non aspernatur numquam aut Quis beatae aut galisum
+        aliquam quo ullam quisquam. Et animi natus et voluptas autem ut magnam
+        molestias ut neque quibusdam. At fugit nobis et asperiores itaque ad
+        mollitia sunt. Et quidem tempora est numquam dolor et doloremque cumque.
+        At distinctio maxime hic quos itaque et sapiente quia est nemo deserunt.
+      </p>
+      <p class="spacing">
+        Et animi natus et voluptas autem ut magnam molestias ut neque quibusdam.
+        At fugit nobis et asperiores itaque ad mollitia sunt. Et quidem tempora
+        est numquam dolor et doloremque cumque. At distinctio maxime hic quos
+        itaque et sapiente quia est nemo deserunt. Id corrupti dolorum et quia
+        impedit non nobis tempora qui beatae voluptas aut rerum libero ut fugit
+        omnis est fuga internos. 33 voluptatem internos 33 optio voluptas et
+        consectetur sapiente quo earum dolorem ut esse ipsum est voluptas dolor
+        qui saepe delectus. Vel ipsa aliquam et exercitationem dolores 33
+        galisum minus eum tenetur sequi? Aut libero blanditiis non aspernatur
+        numquam aut Quis beatae aut galisum aliquam quo ullam quisquam.
+      </p>
+    </div>
+  </body>
+</html>

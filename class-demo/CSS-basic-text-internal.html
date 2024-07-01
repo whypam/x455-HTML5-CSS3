@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Basic Text Internal</title>
+    <style>
+      /* Internal CSS */
+      .new-h1 {
+        margin: 0px 0px 1em 0px;
+        color: #076d6f;
+        font-size: 1.7em;
+        font-weight: bold;
+      }
+
+      .new-h2 {
+        text-decoration: underline;
+        letter-spacing: 5px;
+        color: forestgreen;
+        font-size: 2.5em;
+      }
+
+      .new-h3 {
+        margin: 0px 0px 1.5em 0px;
+        color: #339999;
+        font-size: 1.1em;
+        font-weight: normal;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      .new-h4 {
+        text-align: center;
+        font-size: 1.5em;
+        font-style: italic;
+        color: lightslategrey;
+      }
+
+      .new-h5 {
+        text-align: right;
+        font-size: 3em;
+        color: mediumslateblue;
+      }
+
+      .new-h6 {
+        text-decoration: overline;
+        font-size: 2em;
+        color: darksalmon;
+        text-transform: lowercase;
+      }
+
+      .new-p {
+        text-align: justify;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: indigo;
+      }
+
+      .new-mark {
+        background-color: cornflowerblue;
+      }
+
+      .line-through-text {
+        text-decoration: line-through;
+        color: darkgreen;
+      }
+
+      .small-header-word {
+        font-size: 30px;
+        vertical-align: super;
+        letter-spacing: 0px;
+      }
+
+      .headline {
+        width: 100%;
+        height: auto;
+        background-color: rgb(0, 51, 102);
+        /* red, green and blue */
+        text-align: center;
+        color: white;
+        font-family: monospace, monospace;
+        font-size: 130px;
+        letter-spacing: 5px;
+        padding-bottom: 50px;
+      }
+
+      .hr2 {
+        border: 0;
+        border-top: 3px solid red;
+      }
+
+      .quote-container {
+        width: 630px;
+        padding: 10px;
+      }
+
+      .quote {
+        font-family: cursive, fantasy;
+        font-size: 28px;
+        letter-spacing: 3px;
+      }
+
+      .text-align-right {
+        text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- BEG Browser default heading levels and text -->
+    <h1>Browser default h1</h1>
+
+    <h2>Browser default h2</h2>
+
+    <h3>Browser default h3</h3>
+
+    <h4>Browser default h4</h4>
+
+    <h5>Browser default h5</h5>
+
+    <h6>Browser default h6</h6>
+
+    <p>
+      Browser default paragraph... Morbi commodo, ipsum sed pharetra gravida,
+      orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit
+      amet enim. Lorem ipsum dolor sit amet, consect etuer adipiscing elit. Orci
+      magna rhoncus neque, id pulvinar odio lorem non turpis.
+    </p>
+    <!-- END Browser default heading levels and text -->
+
+    <!-- BEG User-defined heading styles and text -->
+    <h1 class="new-h4">User-defined h1</h1>
+
+    <h2 class="new-h2">User-defined h2</h2>
+
+    <h3 class="new-h3">User-defined h3</h3>
+
+    <h4 class="new-h4">User-defined h4</h4>
+
+    <h5 class="new-h5">User-defined h5</h5>
+
+    <h6 class="new-h6">USeR-deFINed H6</h6>
+
+    <p class="new-p">
+      <mark>Browser default highlight color...</mark>
+      <mark class="new-mark">User-defined highlight color...</mark>
+      <span class="line-through-text">Line through text</span>
+      <strong>strong text...</strong>
+      Morbi commodo, ipsum sed pharetra gravida, orci rhoncus neque, id pulvinar
+      odio lorem non turpis. Nullam sit amet enim. Lorem ipsum dolor sit amet,
+      consect etuer adipiscing elit. Orci magna rhoncus neque, id pulvinar odio
+      lorem non turpis.
+    </p>
+
+    <div class="headline">
+      WEBSITE DESIGN<br /><span class="small-header-word">OF THE</span>WHY<span
+        class="small-header-word"
+        >08/2015 VOL.58 No.08</span
+      >
+    </div>
+
+    <div class="quote-container">
+      <hr class="hr2" />
+      <p class="quote">
+        "Hikng, mountain biking, rock climbing, cooking, reading,
+        weight-training and designing website are great activities.
+      </p>
+      <p class="text-align-right">- P. Wong</p>
+      <hr class="hr2" />
+    </div>
+    <!-- End User-defined heading styles and text -->
+  </body>
+</html>
