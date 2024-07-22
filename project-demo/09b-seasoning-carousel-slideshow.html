@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- changed -->
+    <title>Catering</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="./css/w3.css" />
+    <style>
+      body {
+        font-family: "Times New Roman", Georgia, Serif;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Playfair Display";
+        letter-spacing: 5px;
+      }
+
+      /* customize <a> tag styles */
+      a {
+        text-decoration: none;
+        color: #00a2ff;
+        cursor: pointer;
+      }
+
+      /* my css */
+      .my-img-size-1 {
+        max-width: 300px;
+      }
+
+      .my-img-size-2 {
+        max-width: 500px;
+      }
+
+      .my-float-left {
+        float: left;
+        padding-right: 20px;
+      }
+
+      .my-float-right {
+        float: right;
+        padding-left: 20px;
+      }
+
+      /* for scrollable area */
+      .my-scrolling {
+        height: 300px;
+        overflow: auto;
+      }
+
+      /* center the carousel slide */
+      .mySlides {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 65%;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+      <!-- changed text color for all children elements -->
+      <div
+        class="w3-bar w3-sand w3-padding w3-card w3-text-brown"
+        style="letter-spacing: 4px"
+      >
+        <!-- added -->
+        <div>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-shopping-basket"></i
+          ></a>
+          <a class="w3-padding-large w3-hide-small w3-right"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+
+        <!-- changed -->
+        <!-- changed font size -->
+        <a href="#home" class="w3-bar-item w3-button w3-xlarge"
+          >Food & Cooking</a
+        >
+        <!-- Right-sided navbar links. Hide them on small screens -->
+        <div class="w3-right w3-hide-small">
+          <!-- changed -->
+          <!-- changed font size -->
+          <a href="#food" class="w3-bar-item w3-button w3-large">Food</a>
+          <a href="#seasoning" class="w3-bar-item w3-button w3-large"
+            >Seasoning</a
+          >
+          <a href="#utensil" class="w3-bar-item w3-button w3-large">Utensil</a>
+          <!-- added -->
+          <a href="#cuttery" class="w3-bar-item w3-button w3-large">Cuttery</a>
+          <a href="#chef" class="w3-bar-item w3-button w3-large">Chef</a>
+        </div>
+
+        <!-- begin added for mobile version -->
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+        <a
+          href="javascript:void(0)"
+          class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+          onclick="w3_open()"
+        >
+          <!-- change icon color -->
+          <i class="fa fa-bars w3-text-brown"></i>
+        </a>
+        <!-- end added for mobile version -->
+      </div>
+    </div>
+
+    <!-- begin added for mobile version -->
+    <!-- change mobile manu font color and size -->
+    <nav
+      class="w3-sidebar w3-bar-block w3-sand w3-card w3-animate-left w3-hide-medium w3-hide-large w3-text-brown w3-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <a
+        href="javascript:void(0)"
+        onclick="w3_close()"
+        class="w3-bar-item w3-button w3-large w3-padding-16"
+        >Close &times;</a
+      >
+      <!-- changed -->
+      <a href="#food" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Food</a
+      >
+      <a href="#seasoning" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Seasoning</a
+      >
+      <a href="#utensil" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Utensil</a
+      >
+      <!-- added -->
+      <a href="#cuttery" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Cuttery</a
+      >
+      <a href="#chef" onclick="w3_close()" class="w3-bar-item w3-button"
+        >Chef</a
+      >
+    </nav>
+    <!-- end added for mobile version -->
+
+    <!-- Header -->
+    <header
+      class="w3-display-container w3-content w3-wide"
+      style="max-width: 1600px; min-width: 500px"
+      id="home"
+    >
+      <!-- changed the background image -->
+      <img
+        class="w3-image"
+        src="./img/food-bkgd-02.png"
+        alt="Hamburger Catering"
+        width="1600"
+        height="800"
+      />
+      <!-- changed to w3-hide-small -->
+      <div class="w3-display-bottomleft w3-padding-small w3-hide-small">
+        <h1 class="w3-xxlarge w3-text-sand">
+          Serving Breakfast ~ Lunch ~ Dinner
+        </h1>
+      </div>
+    </header>
+
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 1100px">
+      <!-- About Section -->
+      <!-- changed id to food-->
+      <div class="w3-row w3-padding-64" id="food">
+        <h1 class="w3-center">Food</h1>
+        <div class="w3-padding-large">
+          <h2>Vegetables</h2>
+          <p>
+            <!-- added float left and img size -->
+            <img
+              src="./img/vegetables-02.jpg"
+              class="w3-round w3-image my-float-left my-img-size-1"
+              alt="various types of vegetables"
+              style="width: 100%"
+            />
+            Vegetables are parts of plants that are consumed by humans or other
+            animals as food. The original meaning is still commonly used and is
+            applied to plants collectively to refer to all edible plant matter,
+            including the flowers, fruits, stems, leaves, roots, and seeds. An
+            alternate definition of the term is applied somewhat arbitrarily,
+            often by culinary and cultural tradition. It may exclude foods
+            derived from some plants that are fruits, flowers, nuts, and cereal
+            grains, but include savoury fruits such as tomatoes and courgettes,
+            flowers such as broccoli, and seeds such as pulses.
+          </p>
+          <p>
+            Vegetables play an important role in human nutrition. Most are low
+            in fat and calories but are bulky and filling. They supply dietary
+            fiber and are important sources of essential vitamins, minerals, and
+            trace elements. Particularly important are the antioxidant vitamins
+            A, C, and E. When vegetables are included in the diet, there is
+            found to be a reduction in the incidence of cancer, stroke,
+            cardiovascular disease, and other chronic ailments. Research has
+            shown that, compared with individuals who eat less than three
+            servings of fruits and vegetables each day, those that eat more than
+            five servings have an approximately twenty percent lower risk of
+            developing coronary heart disease or stroke. The nutritional content
+            of vegetables varies considerably; some contain useful amounts of
+            protein though generally they contain little fat, and varying
+            proportions of vitamins such as vitamin A, vitamin K, and vitamin
+            B6; provitamins; dietary minerals; and carbohydrates.
+            <span
+              >Reference:
+              <a
+                href="https://en.wikipedia.org/wiki/Vegetable"
+                target="_blank"
+                class="w3-hover-opacity"
+                >https://en.wikipedia.org/wiki/Vegetable</a
+              ></span
+            >
+          </p>
+        </div>
+        <div class="w3-padding-large">
+          <h2>Friuts</h2>
+          <p>
+            <img
+              src="./img/fruits-01.jpg"
+              class="w3-round w3-image my-float-right my-img-size-2"
+              alt="various types of vegetables"
+              style="width: 100%"
+            />
+            Plant scientists have classified fruits into three main groups:
+            simple fruits, aggregate fruits, and multiple (or composite) fruits.
+          </p>
+          <p>
+            Simple fleshy fruits from apples to berries to watermelon; simple
+            dry fruits including beans and rice, coconuts and carrots; aggregate
+            fruits including strawberries, raspberries, blackberries, pawpaw;
+            multiple fruits such as pineapple, fig, mulberries; (see above re
+            all)— are commercially valuable as human food. They are eaten both
+            fresh and as jams, marmalade and other fruit preserves. They are
+            used extensively in manufactured and processed foods (cakes,
+            cookies, baked goods, flavorings, ice cream, yogurt, canned
+            vegetables, frozen vegetables and meals) and beverages such as fruit
+            juices and alcoholic beverages (brandy, fruit beer, wine). Spices
+            like vanilla, black pepper, paprika, and allspice are derived from
+            berries. Olive fruit is pressed for olive oil and similar processing
+            is applied to other oil bearing fruits/vegetables.
+          </p>
+          <p>
+            Various culinary fruits provide significant amounts of fiber and
+            water and present significant resistance to chewing; many are
+            generally high in vitamin C. An overview of numerous studies show
+            that fruits (e.g., whole apples or whole oranges) are very
+            satisfying (filling) in the acts of simply eating and chewing them.
+            The fiber consumed in eating fruit promote satiety and help to
+            control weight gain and to provide cholesterol-lowering effects.
+            Regular consumption of fruit is generally associated with reduced
+            risks of several diseases and functional declines associated with
+            aging. A current review for meta-analyses concludes that even
+            current assessments might significantly underestimate the protective
+            associations of regularly eating fruits and vegetables.
+            <span
+              >Reference:
+              <a
+                href="https://en.wikipedia.org/wiki/Fruit"
+                target="_blank"
+                class="w3-hover-opacity"
+                >https://en.wikipedia.org/wiki/Fruit</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="w3-row w3-padding-64" id="seasoning">
+        <h1 class="w3-center">Seasoning</h1>
+        <div class="w3-padding-large">
+          <!-- carousel -->
+          <div>
+            <!-- begin carousel slide show -->
+            <!-- step 1: add images for slideshow -->
+            <img class="mySlides" src="./img/salt-01.jpg" style="width: 100%" />
+            <img
+              class="mySlides"
+              src="./img/sugar-01.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/pepper-02.jpg"
+              style="width: 100%; display: none"
+            />
+            <img
+              class="mySlides"
+              src="./img/oil-02.jpg"
+              style="width: 100%; display: none"
+            />
+            <!-- end carousel slide show -->
+          </div>
+          <!-- 3 columns of scrollable areas - using row and col for partitions -->
+          <div class="w3-row">
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Vegetables are parts of plants that are consumed by humans or
+                  other animals as food. The original meaning is still commonly
+                  used and is applied to plants collectively to refer to all
+                  edible plant matter, including the flowers, fruits, stems,
+                  leaves, roots, and seeds. An alternate definition of the term
+                  is applied somewhat arbitrarily, often by culinary and
+                  cultural tradition. It may exclude foods derived from some
+                  plants that are fruits, flowers, nuts, and cereal grains, but
+                  include savoury fruits such as tomatoes and courgettes,
+                  flowers such as broccoli, and seeds such as pulses.
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-brown">
+              <div
+                class="w3-sand w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Vegetables are parts of plants that are consumed by humans or
+                  other animals as food. The original meaning is still commonly
+                  used and is applied to plants collectively to refer to all
+                  edible plant matter, including the flowers, fruits, stems,
+                  leaves, roots, and seeds. An alternate definition of the term
+                  is applied somewhat arbitrarily, often by culinary and
+                  cultural tradition. It may exclude foods derived from some
+                  plants that are fruits, flowers, nuts, and cereal grains, but
+                  include savoury fruits such as tomatoes and courgettes,
+                  flowers such as broccoli, and seeds such as pulses.
+                </p>
+              </div>
+            </div>
+            <div class="w3-col s4 w3-padding w3-sand">
+              <div
+                class="w3-brown w3-center"
+                style="
+                  margin-left: -16px;
+                  margin-right: -16px;
+                  margin-top: -18px;
+                "
+              >
+                <h2>Vegetables</h2>
+              </div>
+              <div class="my-scrolling" style="padding-right: 10px">
+                <p>
+                  Vegetables are parts of plants that are consumed by humans or
+                  other animals as food. The original meaning is still commonly
+                  used and is applied to plants collectively to refer to all
+                  edible plant matter, including the flowers, fruits, stems,
+                  leaves, roots, and seeds. An alternate definition of the term
+                  is applied somewhat arbitrarily, often by culinary and
+                  cultural tradition. It may exclude foods derived from some
+                  plants that are fruits, flowers, nuts, and cereal grains, but
+                  include savoury fruits such as tomatoes and courgettes,
+                  flowers such as broccoli, and seeds such as pulses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Menu Section -->
+
+      <hr />
+
+      <!-- Contact Section -->
+
+      <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-32">
+      <p>
+        Powered by
+        <a
+          href="https://www.w3schools.com/w3css/default.asp"
+          title="W3.CSS"
+          target="_blank"
+          class="w3-hover-text-green"
+          >w3.css</a
+        >
+      </p>
+    </footer>
+
+    <script>
+      // begin added for mobile version
+      // Toggle between showing and hiding the sidebar when clicking the menu icon
+      var mySidebar = document.getElementById("mySidebar");
+
+      function w3_open() {
+        if (mySidebar.style.display === "block") {
+          mySidebar.style.display = "none";
+        } else {
+          mySidebar.style.display = "block";
+        }
+      }
+
+      // Close the sidebar with the close button
+      function w3_close() {
+        mySidebar.style.display = "none";
+      }
+      // end added for mobile version
+
+      // begin added for carousel
+      // step 2: add javascript to support carousel slideshow feature
+      var myIndex = 0;
+      carousel();
+      function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {
+          myIndex = 1;
+        }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+
+      // slideshow - carousel
+      function currentDiv(n) {
+        showDivs((slideIndex = n));
+        myIndex = n;
+      }
+
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {
+          slideIndex = 1;
+        }
+        if (n < 1) {
+          slideIndex = x.length;
+        }
+        for (i = 0; i < x.length; i++) {
+          x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " w3-opacity-off";
+      }
+      // end added for carousel
+    </script>
+  </body>
+</html>
