@@ -78,7 +78,6 @@ To complete the final project, you will go through multiple development stages.
 
    Examples of topics:
 
-   - Portfolio
    - Hobby
    - Travelling
    - Catering
@@ -169,6 +168,7 @@ Coding demo that is done in each lecture will be uploaded to this GitHub reposit
   - (10%) Design Mockup 2
   - (10%) Coding Assignment 1
   - (10%) Coding Assignment 2
+    
 - (10%) Class Participation and Peer Review
 
 - (25%) Final Project, including written summary, Presentation and Peer Review
