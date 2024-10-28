@@ -612,7 +612,12 @@
 
         <!-- step 1: add thumbnail image -->
         <!-- step 2: add modal (background image and close button) -->
+        <!-- create first row to have 3 thumbnail images, 
+             each image takes up 4 columns out of the 12 columns grid,
+             we use classes w3-col s4 -->
+        <!-- first row of thumbnail images created below -->
         <div class="w3-row-padding" style="margin: 15px 0px">
+          <!-- first thumbnail image created below -->
           <div class="w3-col s4">
             <img
               src="./img/chef-alice-waters-150x150.jpg"
@@ -621,9 +626,26 @@
               class="w3-hover-shadow"
             />
           </div>
+
+          <!-- second thumbnail image created below
+               we set 'modal02' in getElementById('modal02') -->
+          <div class="w3-col s4">
+            <img
+              src="./img/chef-april-bloomfield-150x150.jpg"
+              style="width: 100%; cursor: zoom-in"
+              onclick="document.getElementById('modal02').style.display='block'"
+              class="w3-hover-shadow"
+            />
+          </div>
+
+          <!-- continue to add the last thumbnail image in the first row here-->
+          <div></div>
         </div>
 
-        <!-- add modal -->
+        <!-- follow the samples above to create second row of thumbnail images here-->
+        <div class="w3-row-padding" style="margin: 15px 0px"></div>
+
+        <!-- add the first modal, set id="modal01"-->
         <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
           <!-- add close button-->
           <span
@@ -637,6 +659,28 @@
             <img src="./img/chef-alice-waters.png" style="width: 100%" />
           </div>
         </div>
+
+        <!-- add the second modal, set id="modal02"-->
+        <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+          <!-- add close button-->
+          <span
+            class="w3-text-white w3-xxlarge w3-hover-text-grey w3-container w3-display-topright"
+            style="cursor: pointer"
+            >&times;</span
+          >
+          <!-- add modal background image -->
+          <div class="w3-modal-content w3-animate-zoom">
+            <h4 class="w3-center">April Bloomfield</h4>
+            <img src="./img/chef-april-bloomfield.png" style="width: 100%" />
+          </div>
+        </div>
+
+        <!-- follow the samples above to continue adding modal for each thumbnail image -->
+        <div
+          id="modal03"
+          class="w3-modal"
+          onclick="this.style.display='none'"
+        ></div>
       </div>
 
       <!-- End page content -->
