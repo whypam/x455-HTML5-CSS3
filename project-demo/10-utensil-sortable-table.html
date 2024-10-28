@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- begin: step 2 of adding sortable table: add jquery links here -->
     <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
     <script
       type="text/JavaScript"
@@ -18,6 +19,8 @@
       type="text/JavaScript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
     ></script>
+    <!-- end: step 2 of adding sortable table: add jquery links here -->
+
     <link rel="stylesheet" href="./css/w3.css" />
     <style>
       body {
@@ -431,12 +434,13 @@
 
       <hr />
 
-      <!-- Menu Section -->
+      <!-- Sortable table Section -->
       <div class="w3-row w3-padding-64" id="utensil">
         <h1 class="w3-center">Utensil</h1>
         <!-- add sortable table -->
         <!-- step 1: create a table with 4 columns -->
-        <!-- step 2: add javascrip and jquery to make the table sortable -->
+        <!-- step 2: add jquery links in the <head> area -->
+        <!-- step 3: add javascript in <script> tag below to sort in in ascending/descending order -->
         <div class="w3-padding-large">
           <table id="myTable" class="w3-table-all">
             <thead>
@@ -479,8 +483,7 @@
         </div>
       </div>
       <hr />
-
-      <!-- Contact Section -->
+      <!-- Utensil Section -->
 
       <!-- End page content -->
     </div>

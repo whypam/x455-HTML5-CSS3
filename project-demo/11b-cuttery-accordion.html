@@ -9,6 +9,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <!-- begin: step 2 of adding sortable table: add jquery links here -->
     <!-- jquery.min.js should be loaded before jquery.tablesorter.min.js because tablesorter requires basice jquery -->
     <script
       type="text/JavaScript"
@@ -18,6 +19,8 @@
       type="text/JavaScript"
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"
     ></script>
+    <!-- end: step 2 of adding sortable table: add jquery links here -->
+
     <link rel="stylesheet" href="./css/w3.css" />
     <style>
       body {
@@ -442,7 +445,8 @@
         <h1 class="w3-center">Utensil</h1>
         <!-- add sortable table -->
         <!-- step 1: create a table with 4 columns -->
-        <!-- step 2: add javascrip and jquery to make the table sortable -->
+        <!-- step 2: add jquery links in the <head> area -->
+        <!-- step 3: add javascript in <script> tag below to sort in in ascending/descending order -->
         <div class="w3-padding-large">
           <table id="myTable" class="w3-table-all">
             <thead>
@@ -489,8 +493,13 @@
       <!-- Youtube and Accordion Section -->
       <div class="w3-padding-64 w3-container" id="cuttery">
         <h1 class="w3-center">Cuttery</h1>
+        <!-- Create rows and columns to show YouTube videos -->
+        <!-- step 1: create 2 rows using class w3-row -->
+        <!-- step 2: in each rows, create 3 columns using class w3-col s4 or m4 -->
         <div class="w3-row">
+          <!-- create 1st column -->
           <div class="w3-col m4 w3-center">
+            <!-- paste the YouTube video link -->
             <iframe
               height="300"
               src="https://www.youtube.com/embed/G-Fg7l7G1zw"
@@ -500,7 +509,9 @@
             >
             </iframe>
           </div>
+          <!-- create 2nd column -->
           <div class="w3-col m4 w3-center">
+            <!-- paste the YouTube video link -->
             <iframe
               height="300"
               src="https://www.youtube.com/embed/Wk3scs5FqCY"
@@ -510,7 +521,9 @@
             >
             </iframe>
           </div>
+          <!-- create 3rd column -->
           <div class="w3-col m4 w3-center">
+            <!-- paste the YouTube video link -->
             <iframe
               height="300"
               src="https://www.youtube.com/embed/t0jcNefEiBM"
@@ -521,6 +534,7 @@
             </iframe>
           </div>
         </div>
+        <!-- repeat creating row and columns as the samples above -->
         <div class="w3-row">
           <div class="w3-col m4 w3-center">
             <iframe
@@ -559,9 +573,12 @@
         <!-- accordion -->
         <!-- step 1: add accordion button -->
         <!-- step 2: add accordion content -->
-        <!-- step 3: add accorion javascrip -->
+        <!-- step 3: add accordion javascript in <script> below -->
         <div class="w3-row">
+          <!-- create an area to hold both accordion button and content -->
           <div class="w3-col s6 w3-left" style="padding-right: 3px">
+            <!-- add accordion button here -->
+            <!-- set button to 'accordion1' below -->
             <button
               onclick="myAccordion('accordion1')"
               class="w3-button w3-block w3-brown w3-center-align"
@@ -569,6 +586,7 @@
             >
               <h4>Cuttery Tip 1 <i class="fa fa-caret-down"></i></h4>
             </button>
+            <!-- add accordion content here -->
             <div
               id="accordion1"
               class="w3-hide w3-container"
@@ -582,6 +600,9 @@
               </p>
             </div>
           </div>
+          <!-- repeat the steps to create another accordion button and content here -->
+          <!-- make sure set the button id to 'accordion2' below -->
+          <!-- each button id should be unique -->
           <div class="w3-col s6 w3-left" style="padding-left: 3px">
             <button
               onclick="myAccordion('accordion2')"
