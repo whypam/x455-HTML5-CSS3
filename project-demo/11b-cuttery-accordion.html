@@ -721,11 +721,13 @@
       // begin added for accordion
       function myAccordion(id) {
         var x = document.getElementById(id);
+        // if the accordion text is hidden, show it and change the button color to orange
         if (x.className.indexOf("w3-show") == -1) {
           x.className += " w3-show";
           x.previousElementSibling.className =
             x.previousElementSibling.className.replace("w3-brown", "w3-orange");
         } else {
+          // if the accordion text is displayed, hide it and change the button color to brown
           x.className = x.className.replace(" w3-show", "");
           x.previousElementSibling.className =
             x.previousElementSibling.className.replace("w3-orange", "w3-brown");
